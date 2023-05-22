@@ -3,3 +3,9 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;800&display=swap');
+
+.bg_Launch_img {
+    background-image: url(./assets/images/png/LaunchYourProject_bg_Img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
