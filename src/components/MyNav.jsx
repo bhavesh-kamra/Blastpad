@@ -2,7 +2,7 @@ import React from 'react'
 
 const MyNav = () => {
   return (
-    <div>MyNav</div>
+    <div className=''>MyNav</div>
   )
 }
 
