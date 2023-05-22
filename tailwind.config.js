@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         Raleway: "font-family: 'Raleway', sans-serif;",
+        Inter: "font-family: 'Inter', sans-serif;",
       },
       fontSize: {
         xsm: "14px",
@@ -18,7 +19,6 @@ module.exports = {
       backgroundColor: {
         primary: "#030222",
       },
-      
     },
   },
   plugins: [],
