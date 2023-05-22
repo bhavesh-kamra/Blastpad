@@ -19,6 +19,8 @@ module.exports = {
       },
       backgroundColor: {
         primary: "#030222",
+        secandary: "#030739",
+        LigthBlue: "#4377F8",
       },
     },
   },
