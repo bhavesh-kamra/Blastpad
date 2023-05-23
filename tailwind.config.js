@@ -4,7 +4,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        Raleway: "font-family: 'Raleway', sans-serif;",
+        Raleway: " 'Raleway', sans-serif;",
+        Inter: " 'Inter', sans-serif;",
+        FiraSans: " 'Fira Sans', sans-serif;",
       },
       fontSize: {
         xsm: "14px",
@@ -17,9 +19,14 @@ module.exports = {
       },
       backgroundColor: {
         primary: "#030222",
+        secandary: "#030739",
+        LigthBlue: "#4377F8",
       },
+<<<<<<< HEAD
     
       
+=======
+>>>>>>> d40b8a1524a613ed0ba92125bdef5706641fad43
     },
   },
   plugins: [],
