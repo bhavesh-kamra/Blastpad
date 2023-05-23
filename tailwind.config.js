@@ -18,6 +18,7 @@ module.exports = {
       backgroundColor: {
         primary: "#030222",
       },
+    
       
     },
   },
