@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <>
       <section className=" bg-primary pt-10 ">
-        <div className=" container max-w-[1140px] mx-auto px-3">
+        <div className=" container max-w-[1176px] mx-auto px-3">
           <div className=" sm:flex items-center justify-between">
             <div className=" text-center">
               <div className=" flex justify-center sm:justify-start">

@@ -9,3 +9,9 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.bg_img_Stake {
+    background-image: url(../src/assets/images/png/bg_img_Stake.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
