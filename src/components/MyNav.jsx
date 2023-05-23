@@ -42,7 +42,7 @@ const MyNav = () => {
                 Token Staking
               </a>
             </li>
-            <li className=" me-10">
+            <li className=" lg:me-10">
               <a className=" text-white text-xsm" href="">
                 Create a Token
               </a>
