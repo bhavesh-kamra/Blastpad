@@ -5,8 +5,8 @@ import trdthumb from "../assets/images/png/trd. thumb.png";
 const StakeBlastpad = () => {
   return (
     <>
-      <section className=" bg-primary py-5 bg_img_Stake min-h-screen">
-        <div className=" container max-w-[1176px] mx-auto px-3 flex flex-col ">
+      <section className=" bg-primary py-5 bg_img_Stake min-h-screen flex flex-col justify-center">
+        <div className=" container max-w-[1176px] mx-auto px-3 ">
           <h2 className=" font-Raleway font-bold text-white text-3xl sm:text-xxl sm:leading-[60px] max-w-[683px] text-center mx-auto">
             Stake your Blastpad tokens for Bonus Pool Rewards
           </h2>
