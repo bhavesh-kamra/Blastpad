@@ -22,11 +22,6 @@ module.exports = {
         secandary: "#030739",
         LigthBlue: "#4377F8",
       },
-<<<<<<< HEAD
-    
-      
-=======
->>>>>>> d40b8a1524a613ed0ba92125bdef5706641fad43
     },
   },
   plugins: [],

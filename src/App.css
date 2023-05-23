@@ -4,6 +4,13 @@
   backdrop-filter: blur(8.5px);
   padding: 10px 20px 10px 20px;
 }
+body {
+  background-color: #030222;
+}
+.bghero1{
+  background-image: url(../src/assets/images/png/bghero1.png);
+  background-size: cover;
+}
 
 /* nav */
 @media (max-width:1024px) {
@@ -66,4 +73,10 @@
 
 
 
+}
+@media (min-width:1200px) {
+  .container{
+    max-width: 1170px;
+  }
+  
 }

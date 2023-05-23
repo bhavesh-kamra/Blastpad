@@ -3,14 +3,17 @@ import "./App.css";
 import MyNav from "./components/MyNav";
 import Footer from "./components/Footer";
 import Staking from "./components/Staking";
-// import Faq from "./components/Faq";
+import Building from "./components/Building";
+import Exponential from "./components/Exponential";
 
 function App() {
   return (
     <>
-      {/* <MyNav /> */}
-      <Footer />
-      <Staking />
+      <MyNav />
+      <Exponential />
+      <Building />
+      {/* <Footer /> */}
+      {/* <Staking /> */}
     </>
   );
 }

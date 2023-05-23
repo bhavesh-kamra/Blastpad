@@ -7,7 +7,7 @@ const MyNav = () => {
   const [first, setfirst] = useState(true);
   return (
     <section className=" bg-primary py-2">
-      <div className="container max-w-[1170px] mx-auto px-3">
+      <div className="container  mx-auto px-3">
         <nav className=" flex justify-between relative">
           <div className=" flex items-center">
             <img src={logo} alt="" />
