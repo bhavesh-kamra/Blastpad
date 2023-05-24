@@ -2,10 +2,11 @@ import React from "react";
 import firstTumbe from "../assets/images/png/fist thumb.png";
 import secTumbe from "../assets/images/png/sec. thumb.png";
 import trdthumb from "../assets/images/png/trd. thumb.png";
+// import Footer from "./Footer";
 const StakeBlastpad = () => {
   return (
     <>
-      <section className=" bg-primary py-5 bg_img_Stake min-h-screen flex flex-col justify-center">
+      <section className=" py-5 bg_img_Stake min-h-screen flex flex-col justify-center">
         <div className=" container max-w-[1176px] mx-auto px-3 ">
           <h2 className=" font-Raleway font-bold text-white text-3xl sm:text-xxl sm:leading-[60px] max-w-[683px] text-center mx-auto">
             Stake your Blastpad tokens for Bonus Pool Rewards
@@ -96,6 +97,7 @@ const StakeBlastpad = () => {
             </div>
           </div>
         </div>
+       
       </section>
     </>
   );

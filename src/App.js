@@ -6,6 +6,8 @@ import Staking from "./components/Staking";
 import Building from "./components/Building";
 import Exponential from "./components/Exponential";
 import Faq from "./components/Faq";
+import Token from "./components/Token";
+import Airdrop from "./components/Airdrop";
 // import Faq from "./components/Faq";
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
       <Faq />
       <Footer />
       <Staking />
+      <Token />
+      <Airdrop />
     </>
   );
 }

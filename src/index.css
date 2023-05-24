@@ -36,12 +36,47 @@
 
     border-radius: 32px;
 }
-.Stake_Your_Card{
+
+.Stake_Your_Card {
     background: rgba(67, 119, 248, 0.07);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        box-shadow: 0px 4px 23px rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(81.5px);
-        /* Note: backdrop-filter has minimal browser support */
-    
-        border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 4px 23px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(81.5px);
+    border-radius: 15px;
+}
+
+.createToken {
+    background: rgba(67, 119, 248, 0.05);
+    border: 1.26982px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(83.5px);
+    border-radius: 15px;
+}
+
+.bg_input {
+    background: rgba(67, 119, 248, 0.1);
+    border: 1.26982px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(77.5px);
+    border-radius: 5px;
+}
+
+.AirDropPush {
+    background: linear-gradient(254.15deg, #4478F9 11.47%, #070380 86.69%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 4px 23px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(81.5px);
+    border-radius: 10px;
+}
+
+.AirDropClaim {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    filter: drop-shadow(0px 4px 23px rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(81.5px);
+    border-radius: 10px;
+}
+
+.SetupdropDwon {
+    background: rgba(67, 119, 248, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(81.5px);
+    border-radius: 10px;
 }
