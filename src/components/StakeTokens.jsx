@@ -9,6 +9,7 @@ import Handshake from "../assets/images/png/Handshake.png";
 import Dogecoin from "../assets/images/png/dogecoin.png";
 import iconToken from "../assets/images/png/Icon_PNG.png";
 import Token from "../assets/images/png/token.png";
+import Footer from "./Footer";
 export const StakeTokensData = [
   {
     img: proton,
@@ -230,7 +231,7 @@ export const StakeTokensData = [
 const StakeTokens = () => {
   return (
     <>
-      <section className="stakeYourToken_bg_img py-5">
+      <section className="stakeYourToken_bg_img pt-5">
         <div className=" container max-w-[1176px] mx-auto px-3">
           <h2 className=" text-center font-Raleway font-bold text-xxl text-white">
             Stake Your Tokens
@@ -306,7 +307,13 @@ const StakeTokens = () => {
               );
             })}
           </div>
+          <div className=" text-center pt-12">
+            <button className="cmn_btn font-Raleway font-semibold text-xs text-white">
+              Show more
+            </button>
+          </div>
         </div>
+        <Footer />
       </section>
     </>
   );
