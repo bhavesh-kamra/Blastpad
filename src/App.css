@@ -11,6 +11,10 @@ body {
   background-image: url(../src/assets/images/png/bghero1.png);
   background-size: cover;
 }
+.bgstake1{
+  background-image: url(../src/assets/images/png/bgstake1.png);
+  background-size: cover;
+}
 
 /* nav */
 @media (max-width:1024px) {
