@@ -47,7 +47,7 @@ const CreateToken = () => {
 
             <form action="">
               <div className=" grid grid-cols-1 sm:grid-cols-2">
-                <div className="">
+                <div className=" py-0">
                   <p className=" font-Raleway font-normal text-sm opacity-70 text-white pt-4">
                     Issuer
                   </p>

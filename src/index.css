@@ -32,8 +32,6 @@
     background: linear-gradient(254.15deg, rgba(68, 120, 249, 0.1) 11.47%, rgba(7, 3, 128, 0.1) 86.69%);
     border: 1px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(8.5px);
-    /* Note: backdrop-filter has minimal browser support */
-
     border-radius: 32px;
 }
 
@@ -65,18 +63,53 @@
     box-shadow: 0px 4px 23px rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(81.5px);
     border-radius: 10px;
+    /* transition: all 500ms linear !important; */
 }
 
-.AirDropClaim {
+.AirDropPush:hover {
+    background: linear-gradient(254.15deg, #4477f900 11.47%, #fcfcff00 86.69%);
     border: 1px solid rgba(255, 255, 255, 0.1);
     filter: drop-shadow(0px 4px 23px rgba(255, 255, 255, 0.1));
     backdrop-filter: blur(81.5px);
     border-radius: 10px;
+    /* transition: all 500ms linear !important; */
 }
+
 
 .SetupdropDwon {
     background: rgba(67, 119, 248, 0.07);
     border: 1px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(81.5px);
     border-radius: 10px;
+}
+
+.dott_para::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: 24px;
+    left: 4px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.form-select {
+    display: block;
+    width: 327px;
+    height: 55px;
+    padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+    -moz-padding-start: calc(0.75rem - 3px);
+    line-height: 1.5;
+    background: rgba(67, 119, 248, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(81.5px);
+    border-radius: 10px;
+    /* background-image: url("./assets//images/svg/accordian_open_icon.svg"); */
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+}
+
+.form-select:focus {
+    box-shadow: none;
 }
