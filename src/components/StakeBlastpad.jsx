@@ -6,7 +6,7 @@ import trdthumb from "../assets/images/png/trd. thumb.png";
 const StakeBlastpad = () => {
   return (
     <>
-      <section className=" py-5 bg_img_Stake min-h-screen flex flex-col justify-center">
+      <section className=" py-5  min-h-screen flex flex-col justify-center">
         <div className=" container max-w-[1176px] mx-auto px-3 ">
           <h2 className=" font-Raleway font-bold text-white text-3xl sm:text-xxl sm:leading-[60px] max-w-[683px] text-center mx-auto">
             Stake your Blastpad tokens for Bonus Pool Rewards
@@ -35,7 +35,7 @@ const StakeBlastpad = () => {
             <div className="flex justify-between items-center mx-auto lg:mx-0 translate-y-[32px] max-w-[100%] pt-7">
               <div className=" pt-0">
                 <div className=" flex items-end">
-                  <div className="">
+                  <div>
                     <p className=" font-Raleway text-[#4377F8] sm:pb-4">
                       Bonus
                     </p>
@@ -55,7 +55,7 @@ const StakeBlastpad = () => {
               </div>
               <div className=" translate-y-[-17px] mx-5 sm:mx-10 xl:mx-0">
                 <div className=" flex items-end">
-                  <div className="">
+                  <div>
                     <p className=" font-Raleway text-[#4377F8] sm:pb-4">
                       Bonus
                     </p>
@@ -76,7 +76,7 @@ const StakeBlastpad = () => {
               </div>
               <div className=" translate-y-[-35px]">
                 <div className=" flex items-end">
-                  <div className="">
+                  <div>
                     <p className=" font-Raleway text-[#4377F8] sm:pb-4">
                       Bonus
                     </p>
@@ -97,7 +97,6 @@ const StakeBlastpad = () => {
             </div>
           </div>
         </div>
-       
       </section>
     </>
   );

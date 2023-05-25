@@ -7,7 +7,7 @@ import Bitcoin from "../assets/images/png/Bitcoin.png";
 import Ethereum from "../assets/images/png/ethereum.png";
 import Handshake from "../assets/images/png/Handshake.png";
 import Dogecoin from "../assets/images/png/dogecoin.png";
-import iconToken from "../assets/images/png/Icon_PNG.png";
+// import iconToken from "../assets/images/png/Icon_PNG.png";
 import Token from "../assets/images/png/token.png";
 import Footer from "./Footer";
 export const StakeTokensData = [
@@ -239,71 +239,75 @@ const StakeTokens = () => {
           <div className=" grid sm:grid-cols-2 lg:grid-cols-3 mt-10 gap-4 md:gap-6">
             {StakeTokensData.map((value) => {
               return (
-                <div className="Stake_Your_Card p-3 xl:p-6">
-                  <div className=" flex items-center">
-                    <img
-                      src={value.img}
-                      alt=""
-                      className=" bg-[#262D57] px-2.5 py-2 rounded-lg"
-                    />
-                    <div className=" ms-3">
-                      <h1 className=" font-Raleway font-bold text-lg text-white">
-                        {value.heading1}
-                      </h1>
-                      <p className=" font-Raleway font-normal text-xs text-white opacity-70">
-                        {value.para1}
+                <>
+                  <div>
+                    <div className="Stake_Your_Card p-3 xl:p-6">
+                      <div className=" flex items-center">
+                        <img
+                          src={value.img}
+                          alt=""
+                          className=" bg-[#262D57] px-2.5 py-2 rounded-lg"
+                        />
+                        <div className=" ms-3">
+                          <h1 className=" font-Raleway font-bold text-lg text-white">
+                            {value.heading1}
+                          </h1>
+                          <p className=" font-Raleway font-normal text-xs text-white opacity-70">
+                            {value.para1}
+                          </p>
+                        </div>
+                      </div>
+                      <p className="font-Raleway font-normal text-xs text-white opacity-70 max-w-[320px] pt-4">
+                        {value.heading2}
                       </p>
+                      <div className=" flex justify-between items-center">
+                        <h2 className=" font-Raleway text-lg text-white font-bold pt-4">
+                          {value.apr}
+                        </h2>
+                        <h2 className=" font-Raleway text-lg text-white font-semibold pt-4">
+                          {value.aprValue}
+                        </h2>
+                      </div>
+                      <div className=" flex justify-between items-center pt-2">
+                        <h2 className=" font-Raleway opacity-70 font-normal text-sm text-white ">
+                          {value.Mystake}
+                        </h2>
+                        <p className=" font-Raleway font-semibold text-sm text-white">
+                          {value.MystakeValue}
+                        </p>
+                      </div>
+                      <div className=" flex justify-between items-center pt-2">
+                        <h2 className=" font-Raleway opacity-70 font-normal text-sm text-white ">
+                          {value.Myrewards}
+                        </h2>
+                        <p className=" font-Raleway font-semibold text-sm text-white">
+                          {value.MyrewardsValuse}
+                        </p>
+                      </div>
+                      <div className=" flex justify-between items-center pt-2">
+                        <h2 className=" font-Raleway opacity-70 font-normal text-sm text-white ">
+                          {value.Remainingrewards}
+                        </h2>
+                        <p className=" font-Raleway font-semibold text-sm text-white">
+                          {value.RemainingrewardsValue}
+                        </p>
+                      </div>
+                      <div className=" flex justify-between items-center py-2 px-2 mt-2 border-[1px] rounded-[35px]  border-separate border-[#131B4A]">
+                        <h2 className=" font-Raleway opacity-70 font-normal text-sm text-white ">
+                          {value.TotalStakereward}
+                        </h2>
+                        <p className=" font-Raleway font-semibold text-sm text-white">
+                          {value.TotalStakerewardValue}
+                        </p>
+                      </div>
+                      <div className=" text-center mt-3">
+                        <button className=" font-Raleway font-semibold text-xs text-white py-3 px-6 add_token_btn">
+                          {value.btn}
+                        </button>
+                      </div>
                     </div>
                   </div>
-                  <p className="font-Raleway font-normal text-xs text-white opacity-70 max-w-[320px] pt-4">
-                    {value.heading2}
-                  </p>
-                  <div className=" flex justify-between items-center">
-                    <h2 className=" font-Raleway text-lg text-white font-bold pt-4">
-                      {value.apr}
-                    </h2>
-                    <h2 className=" font-Raleway text-lg text-white font-semibold pt-4">
-                      {value.aprValue}
-                    </h2>
-                  </div>
-                  <div className=" flex justify-between items-center pt-2">
-                    <h2 className=" font-Raleway opacity-70 font-normal text-sm text-white ">
-                      {value.Mystake}
-                    </h2>
-                    <p className=" font-Raleway font-semibold text-sm text-white">
-                      {value.MystakeValue}
-                    </p>
-                  </div>
-                  <div className=" flex justify-between items-center pt-2">
-                    <h2 className=" font-Raleway opacity-70 font-normal text-sm text-white ">
-                      {value.Myrewards}
-                    </h2>
-                    <p className=" font-Raleway font-semibold text-sm text-white">
-                      {value.MyrewardsValuse}
-                    </p>
-                  </div>
-                  <div className=" flex justify-between items-center pt-2">
-                    <h2 className=" font-Raleway opacity-70 font-normal text-sm text-white ">
-                      {value.Remainingrewards}
-                    </h2>
-                    <p className=" font-Raleway font-semibold text-sm text-white">
-                      {value.RemainingrewardsValue}
-                    </p>
-                  </div>
-                  <div className=" flex justify-between items-center py-2 px-2 mt-2 border-[1px] rounded-[35px]  border-separate border-[#131B4A]">
-                    <h2 className=" font-Raleway opacity-70 font-normal text-sm text-white ">
-                      {value.TotalStakereward}
-                    </h2>
-                    <p className=" font-Raleway font-semibold text-sm text-white">
-                      {value.TotalStakerewardValue}
-                    </p>
-                  </div>
-                  <div className=" text-center mt-3">
-                    <button className=" font-Raleway font-semibold text-xs text-white py-3 px-6 add_token_btn">
-                      {value.btn}
-                    </button>
-                  </div>
-                </div>
+                </>
               );
             })}
           </div>

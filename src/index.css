@@ -113,3 +113,127 @@
 .form-select:focus {
     box-shadow: none;
 }
+
+.blurChoose {
+    position: absolute;
+    width: 256px;
+    height: 256px;
+    left: -35px;
+    bottom: 50px;
+    background: #4377F8;
+    filter: blur(175px);
+}
+
+.form_checkbook input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+}
+
+.form_checkbook label {
+    position: relative;
+    cursor: pointer;
+}
+
+.form_checkbook label:before {
+    background: rgba(67, 119, 248, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 4px 23px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(81.5px);
+    border-radius: 5px;
+    content: '';
+    -webkit-appearance: none;
+    background-color: #0C1137;
+    width: 24px;
+    height: 24px;
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.form_checkbook input:checked+label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 9px;
+    width: 6px;
+    height: 14px;
+    border: solid #FFFFFF;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.line_steup {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-16%, -58%);
+    text-align: center;
+}
+
+.Arrow_Left {
+    left: 44%;
+    transform: translate(-46%, 50%);
+}
+
+.Arrow_Left_2 {
+    bottom: 3%;
+    left: 44%;
+    transform: translate(-47%, -50%);
+}
+
+.Arrow_Right {
+    top: 50%;
+    left: 56%;
+    transform: translate(-51%, -50%);
+}
+
+
+
+@media (max-width:1023.92px) {
+    .line_steup {
+        left: 47px;
+    }
+
+    .Arrow_Right {
+        top: 50%;
+        left: 109px;
+    }
+
+    .Arrow_Right_2 {
+        top: 7%;
+        left: 0;
+    }
+
+    .Arrow_Right_3 {
+        bottom: 7%;
+        left: 3px;
+    }
+}
+
+
+@media (max-width:608.92px) {
+    .line_steup {
+        left: 8%;
+    }
+}
+
+@media (max-width:575.92px) {
+    .line_steup {
+        left: 46px;
+    }
+}

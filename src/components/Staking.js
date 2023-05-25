@@ -2,15 +2,16 @@ import React from "react";
 import StakeBlastpad from "./StakeBlastpad";
 import StakeTokens from "./StakeTokens";
 import StakeBlastpadBonus from "./StakeBlastpadBonus";
-import Footer from "./Footer";
+// import Footer from "./Footer";
 
 const Staking = () => {
   return (
     <>
-      <StakeBlastpad />
-      <StakeTokens />
+      <div className="stakeYourToken_bg_img">
+        <StakeBlastpad />
+        {/* <StakeTokens /> */}
+      </div>
       <StakeBlastpadBonus />
-      
     </>
   );
 };

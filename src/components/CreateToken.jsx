@@ -14,7 +14,7 @@ const CreateToken = () => {
             </button>
             <form action="">
               <div className=" grid grid-cols-1 sm:grid-cols-2 gap-12">
-                <div className="">
+                <div>
                   <p className=" font-Raleway font-normal text-sm opacity-70 text-white pt-4">
                     Log ID
                   </p>
@@ -24,13 +24,13 @@ const CreateToken = () => {
                     className="bg_input outline-none text-white font-Raleway font-normal text-sm ps-4 py-[10px] w-full mt-3"
                   />
                 </div>
-                <div className="">
+                <div>
                   <p className=" font-Raleway font-normal text-sm opacity-70 text-white  sm:pt-4">
                     Password
                   </p>
                   <input
                     type="password"
-                    minlength="8"
+                    minLength="8"
                     className="bg_input outline-none text-[#092E8B] text-sm font-Raleway font-normal ps-4 py-[10px] w-full mt-3"
                   />
                 </div>
@@ -141,20 +141,15 @@ const CreateToken = () => {
                 </div>
               </div>
               <div className=" mt-8">
-                <input
-                  type="checkbox"
-                  id="vehicle1"
-                  name="vehicle1"
-                  value="Bike"
-                  className=""
-                />
-                <label
-                  for="vehicle1"
-                  className=" font-Raleway font-semibold text-sm text-white ms-3"
-                >
-                  A flat fee of 1XPR will be change for creating your token as a
-                  one time fee.
-                </label>
+                <form className="flex mb-1">
+                  <div class="form_checkbook">
+                    <input type="checkbox" id="javascript" className="me-5" />
+                    <label for="javascript"></label>
+                  </div>
+                  <p className="font-Raleway font-semibold text-sm text-white ms-3">
+                    Air Drop tokens to Proton accounts older than
+                  </p>
+                </form>
               </div>
               <button className=" font-Raleway font-semibold text-md text-white mt-6 border rounded-[32px] px-8 py-4 border-white">
                 Create Token

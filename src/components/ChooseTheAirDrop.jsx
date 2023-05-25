@@ -2,12 +2,14 @@ import { Disclosure } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/20/solid";
 // import { Button } from "@material-tailwind/react";
 import Arrow from "../assets/images/png/samllArrow.png";
+import Footer from "./Footer";
 export default function Example() {
   return (
     <section className="bg_img_faq">
-      <div className=" container max-w-[1176px] mx-auto px-3 pt-16">
+      <div className=" container max-w-[1176px] mx-auto px-3 pt-16 pb-10">
         <div className=" lg:flex gap-10">
-          <div className=" lg:max-w-[399px] w-full">
+          <div className=" lg:max-w-[399px] w-full relative">
+            <div className=" blurChoose"></div>
             <div className=" flex items-center justify-between AirDropPush py-9 px-6 cursor-pointer ">
               <p className=" font-Raleway font-bold text-lg text-white">
                 Air Drop Push
@@ -21,7 +23,7 @@ export default function Example() {
               <img src={Arrow} alt="Arrow" className=" rotate-[270deg]" />
             </div>
           </div>
-          <div className=" lg:max-w-[708px] rounded-2xl mt-5">
+          <div className=" lg:max-w-[708px] rounded-2xl mt-5 lg:mt-0">
             <Disclosure>
               {({ open }) => (
                 <>
@@ -123,20 +125,19 @@ export default function Example() {
                     <Disclosure.Panel className=" ease-out duration-500">
                       <div className=" border my-7 mx-2 border-[#0A0E38]"></div>
                       <div className=" mb-3">
-                        <input
-                          type="checkbox"
-                          id="vehicle1"
-                          name="vehicle1"
-                          value="Bike"
-                          className=""
-                        />
-                        <label
-                          for="vehicle1"
-                          className=" font-Raleway font-normal  text-sm text-white ms-3 opacity-70"
-                        >
-                          A flat fee of 1XPR will be change for creating your
-                          token as a one time fee.
-                        </label>
+                        <form className="flex mb-1">
+                          <div class="form_checkbook">
+                            <input
+                              type="checkbox"
+                              id="javascript"
+                              className="me-5"
+                            />
+                            <label for="javascript"></label>
+                          </div>
+                          <p className="ps-1 font-Raleway font-normal text-sm text-white opacity-70 mb-2">
+                            Air Drop tokens to Proton accounts older than
+                          </p>
+                        </form>
                       </div>
                       <select
                         class="form-select outline-none mb-3 font-Raleway font-bold text-sm text-white"
@@ -148,19 +149,15 @@ export default function Example() {
                         <option value="3">3Day</option>
                       </select>
                       <div className=" mt-3">
-                        <input
-                          type="checkbox"
-                          id="vehicle1"
-                          name="vehicle1"
-                          value="Bike"
-                          className=" text-white"
-                        />
-                        <label
-                          for="vehicle1"
-                          className=" font-Raleway font-normal  text-sm text-white ms-3 opacity-70"
-                        >
-                          Air Drop tokens to Proton accounts older than
-                        </label>
+                        <form className="flex mb-1">
+                          <div class="form_checkbook">
+                            <input type="checkbox" id="ff" className="me-5" />
+                            <label for="ff"></label>
+                          </div>
+                          <p className="ps-1 font-Raleway font-normal text-sm text-white opacity-70 mb-2">
+                            Air Drop tokens to Proton accounts older than
+                          </p>
+                        </form>
                       </div>
                       <div className=" flex gap-4">
                         <select
@@ -257,6 +254,7 @@ export default function Example() {
           </div>
         </div>
       </div>
+      <Footer />
     </section>
   );
 }
