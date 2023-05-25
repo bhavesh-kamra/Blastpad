@@ -9,7 +9,7 @@ const Staking = () => {
     <>
       <div className="stakeYourToken_bg_img">
         <StakeBlastpad />
-        {/* <StakeTokens /> */}
+        <StakeTokens />
       </div>
       <StakeBlastpadBonus />
     </>
