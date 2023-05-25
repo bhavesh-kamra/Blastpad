@@ -8,6 +8,8 @@ import Exponential from "./components/Exponential";
 import Faq from "./components/Faq";
 import StakeBlastpadBonus from "./components/StakeBlastpadBonus";
 import AirdropToken from "./components/AirdropToken";
+import Token from "./components/Token";
+import Airdrop from "./components/Airdrop";
 // import Faq from "./components/Faq";
 
 function App() {
@@ -24,6 +26,8 @@ function App() {
       <Faq />
       <Footer />
       <Staking />
+      <Token />
+      <Airdrop />
     </>
   );
 }
