@@ -1,16 +1,36 @@
 import React from 'react'
+import blastpadman from "../assets/images/png/blastpadman.png"
 
 const StakeBlastpadBonus = () => {
   return (
-      <section className=' bgstake1'>
-      <div className="container px-3 mx-auto">
-        
-        
-              
+    <section className=" bg-primary bgstake1">
+      <div className="container  mx-auto px-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center">
+          <div className=" mx-auto pb-8">
+            <img className=" w-full" src={blastpadman} alt="proton" />
           </div>
-          
+          <div className=" ps-5 text-center  md:text-start">
+            <h2 className=" text-white font-Raleway text-xxl  font-bold mb-4   leading-[46px]">
+              BlastPad Bonus Pool
+            </h2>
+            <p className=" text-white font-Raleway text-sm  font-normal opacity-75 mb-5">
+              Staking has become an increasingly popular way for investors to
+              earn rewards on their cryptocurrency holdings. By locking up their
+              funds to help validate transactions and maintain network security,
+              stakers can earn additional cryptocurrency as a reward.
+            </p>
+            <p className="text-white font-Raleway text-sm  font-normal opacity-75">
+              These bonus rewards can take many forms, such as higher staking
+              rewards, access to exclusive features or services, or airdrops of
+              new tokens. For example, some networks may offer higher staking
+              rewards to investors who hold a certain amount of their native
+              token or provide liquidity to the network.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
-  )
+  );
 }
 
 export default StakeBlastpadBonus

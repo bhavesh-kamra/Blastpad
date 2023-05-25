@@ -6,10 +6,14 @@ const Building = () => {
     <section className=" bg-primary">
       <div className="container  mx-auto px-3">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center">
-          <div className=' mx-auto'>
-            <img className=" w-[513px] h-[507px]" src={proton} alt="proton" />
+          <div className=" mx-auto pb-8">
+            <img
+              className=" w-[513px] lg:h-[450px] h-[350px]"
+              src={proton}
+              alt="proton"
+            />
           </div>
-          <div className=' ps-5'>
+          <div className=" ps-5 text-center  md:text-start">
             <h2 className=" text-white font-Raleway text-xxl  font-bold mb-4   leading-[46px]">
               Building On The Proton Blockchain
             </h2>

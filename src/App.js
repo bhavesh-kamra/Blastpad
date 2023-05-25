@@ -6,6 +6,8 @@ import Staking from "./components/Staking";
 import Building from "./components/Building";
 import Exponential from "./components/Exponential";
 import Faq from "./components/Faq";
+import StakeBlastpadBonus from "./components/StakeBlastpadBonus";
+import AirdropToken from "./components/AirdropToken";
 // import Faq from "./components/Faq";
 
 function App() {
@@ -14,6 +16,8 @@ function App() {
       <MyNav />
       <Exponential />
       <Building />
+      <StakeBlastpadBonus />
+      <AirdropToken />
       {/* <Footer /> */}
       {/* <Staking /> */}
       {/* <MyNav /> */}
