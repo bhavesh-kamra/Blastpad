@@ -1,6 +1,7 @@
 import React from 'react'
 import rocketwithmoon from "../assets/images/png/rocketwithmoon.png"
 import circle from "../assets/images/png/circle.png"
+import globe1 from "../assets/images/png/globe1.png"
 
 const Exponential = () => {
     return (
@@ -23,6 +24,7 @@ const Exponential = () => {
                 src={circle}
                 alt="bluecircle"
               />
+              <img className=' absolute top-[10%]' src={globe1} alt="globe" />
             </div>
           </div>
         </div>
