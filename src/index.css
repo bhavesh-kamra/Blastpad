@@ -94,6 +94,13 @@
     border-radius: 10px;
 }
 
+.Clouds_setup {
+    top: 112%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
 .dott_para::after {
     content: "";
     position: absolute;

@@ -21,18 +21,18 @@ const StakeBlastpad = () => {
                 euismod feugiat sed vestibulum fermentum tempor.
               </p>
               <div className=" flex items-center pt-7 justify-center lg:justify-start">
-                <p className=" font-Raleway font-semibold text-xxl text-white bg-secandary p-4 sm:py-7 sm:px-9 rounded-xl ">
+                <p className=" font-Raleway font-semibold text-xxl text-white bg-secandary p-3 sm:py-7 sm:px-9 rounded-xl ">
                   1m
                 </p>
-                <p className=" font-Raleway font-semibold text-xxl text-white bg-secandary p-4 sm:py-7 sm:px-9  rounded-xl mx-6">
+                <p className=" font-Raleway font-semibold text-xxl text-white bg-secandary p-3 sm:py-7 sm:px-9  rounded-xl mx-4 sm:mx-6">
                   5m
                 </p>
-                <p className=" font-Raleway font-semibold text-xxl text-white bg-secandary p-4 sm:py-7 sm:px-9  rounded-xl ">
+                <p className=" font-Raleway font-semibold text-xxl text-white bg-secandary p-3 sm:py-7 sm:px-9  rounded-xl ">
                   10m
                 </p>
               </div>
             </div>
-            <div className="flex justify-between items-center mx-auto lg:mx-0 translate-y-[32px] max-w-[100%] pt-7">
+            <div className="flex justify-between items-center mx-auto lg:mx-0 translate-y-[32px] sm:max-w-[100%] pt-7">
               <div className=" pt-0">
                 <div className=" flex items-end">
                   <div>
@@ -53,7 +53,7 @@ const StakeBlastpad = () => {
                   1m
                 </p>
               </div>
-              <div className=" translate-y-[-17px] mx-5 sm:mx-10 xl:mx-0">
+              <div className=" translate-y-[-17px] mx-2 sm:mx-10 xl:mx-0">
                 <div className=" flex items-end">
                   <div>
                     <p className=" font-Raleway text-[#4377F8] sm:pb-4">
