@@ -1,22 +1,39 @@
 import React from "react";
+import { useRef } from "react";
 import MetalDao from "../assets/images/png/metal.png";
 import present12 from "../assets/images/png/Parsent12.png";
 import rocket from "../assets/images/png/rocket.png";
 import Slider from "react-slick";
+import rightArrow from "../assets/images/png/PresArrow.png";
+import leftArrow from "../assets/images/png/nextArrow.png";
 const OurActiveToken = () => {
+  const slider = useRef(null);
   var settings = {
     dots: true,
     infinite: true,
+    arrows: false,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
   };
   return (
     <>
-      <section>
-        <div className=" container max-w-[1176px] mx-auto px-3">
-          <div className="">
-            <Slider {...settings}>
+      <section className="">
+        <div className=" container max-w-[1176px] mx-auto px-3 relative">
+          <img
+            onClick={() => slider.current.slickPrev()}
+            className=" absolute left-[-65px] top-[40%]"
+            src={rightArrow}
+            alt=""
+          />
+          <img
+            onClick={() => slider.current.slickNext()}
+            className="ms-3 absolute right-[-65px] top-[40%] "
+            src={leftArrow}
+            alt="#"
+          />
+          <div className=" ">
+            <Slider ref={slider} {...settings}>
               <div className="px-2">
                 <div className=" Stake_Your_Card p-4 ">
                   <div className=" flex ">
