@@ -1,9 +1,16 @@
 import React from "react";
 import blastpadman from "../assets/images/png/blastpadman.png";
+import blur from "../assets/images/png/blur.png";
+
 
 const StakeBlastpadBonus = () => {
   return (
-    <section className=" bgblastpadbonus take1">
+    <section className=" bgblastpadbonus bg-[#030222] lg:pt-20 lg:pb-10 relative">
+      <img
+        className=" z-50 absolute top-0  left-0"
+        src={blur}
+        alt="blureffect"
+      />
       <div className="container  mx-auto px-3">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center">
           <div className=" mx-auto pb-8">
