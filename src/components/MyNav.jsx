@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const MyNav = () => {
   const [first, setfirst] = useState(true);
   return (
-    <section className=" bg-primary py-2">
+    <section className=" bg-primary bgactivetoken  pt-4">
       <div className="container  mx-auto px-3">
         <nav className=" flex justify-between relative">
           <div className=" flex items-center">
