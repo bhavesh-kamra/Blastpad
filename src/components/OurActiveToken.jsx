@@ -1,16 +1,19 @@
 import React from "react";
+import { useRef } from "react";
 import MetalDao from "../assets/images/png/metal.png";
-import Bitcoin from "../assets/images/png/Bitcoin.png";
+import bitcoin from "../assets/images/png/Bitcoin.png";
 import metaldollar from "../assets/images/png/metalDallor.png";
-
-
 import present12 from "../assets/images/png/Parsent12.png";
 import rocket from "../assets/images/png/rocket.png";
 import Slider from "react-slick";
+import rightArrow from "../assets/images/png/PresArrow.png";
+import leftArrow from "../assets/images/png/nextArrow.png";
 const OurActiveToken = () => {
+  const slider = useRef(null);
   var settings = {
     dots: false,
     infinite: true,
+    arrows: false,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -21,7 +24,8 @@ const OurActiveToken = () => {
           slidesToShow: 2,
           slidesToScroll: 3,
           infinite: true,
-          dots: true,
+          dots: false,
+          arrows: false,
         },
       },
       {
@@ -29,6 +33,7 @@ const OurActiveToken = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          arrows: false,
         },
       },
       {
@@ -36,6 +41,7 @@ const OurActiveToken = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          arrows: false,
         },
       },
       // You can unslick at a given breakpoint now by adding:
@@ -43,25 +49,36 @@ const OurActiveToken = () => {
       // instead of a settings object
     ],
   };
-
   return (
     <>
-      <section className="bgactivetoken">
-        <div className=" container max-w-[1176px] mx-auto px-3">
-          <div className=" text-center pt-9 pb-6">
-            <h2 className=" font-Raleway text-[40px] text-white font-semibold">
+      <section className="bgactivetoken relative">
+        <img
+          onClick={() => slider.current.slickPrev()}
+          className=" absolute top-[20%] left-5"
+          src={rightArrow}
+          alt=""
+        />
+        <img
+          onClick={() => slider.current.slickNext()}
+          className=" absolute  top-[20%] right-5"
+          src={leftArrow}
+          alt="#"
+        />
+        <div className=" container mx-auto px-3">
+          <div className=" text-center pt-9 pb-6 mb-10">
+            <h2 className=" font-Raleway text-[32px] text-white font-semibold">
               Our Active Token
             </h2>
           </div>
 
-          <Slider {...settings}>
+          <Slider  ref={slider} {...settings}>
             <div className="px-2">
-              <div className=" Stake_Your_Card p-3 ">
+              <div className=" Stake_Your_Card p-3  h-full">
                 <div className=" flex ">
                   <img
                     src={MetalDao}
                     alt="MetalDao"
-                    className="bg-[#262D57] px-2.5 py-2 rounded-lg"
+                    className="bg-[#262D57] px-2.5 py-2 rounded-lg tokenimg"
                   />
                   <div className=" ms-4">
                     <h2 className=" font-bold font-Raleway text-lg text-white">
@@ -73,13 +90,13 @@ const OurActiveToken = () => {
                   </div>
                 </div>
                 <div className=" mt-6 flex justify-between">
-                  <button className=" w-full px-1 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[12px] text-white rounded-[22px]">
+                  <button className=" w-full px-1 sm:px-[3px] py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
                     Total raise 69k
                   </button>
-                  <button className=" w-full mx-2 px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[12px] text-white rounded-[22px]">
+                  <button className=" w-full mx-2 px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
                     value 3.2M
                   </button>
-                  <button className=" w-full px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[12px] text-white rounded-[22px]">
+                  <button className=" w-full px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
                     Min allow$0
                   </button>
                 </div>
@@ -111,12 +128,12 @@ const OurActiveToken = () => {
               </div>
             </div>
             <div className="px-2">
-              <div className=" Stake_Your_Card p-3 ">
+              <div className=" Stake_Your_Card p-3  h-full">
                 <div className=" flex ">
                   <img
-                    src={Bitcoin}
+                    src={bitcoin}
                     alt="bitcoin"
-                    className="bg-[#262D57] px-2.5 py-2 rounded-lg"
+                    className="bg-[#262D57] px-2.5 py-2 rounded-lg tokenimg"
                   />
                   <div className=" ms-4">
                     <h2 className=" font-bold font-Raleway text-lg text-white">
@@ -128,13 +145,13 @@ const OurActiveToken = () => {
                   </div>
                 </div>
                 <div className=" mt-6 flex justify-between">
-                  <button className=" w-full px-1 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[12px] text-white rounded-[22px]">
+                  <button className=" w-full px-1 sm:px-[3px] py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
                     Total raise 69k
                   </button>
-                  <button className=" w-full mx-2 px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[12px] text-white rounded-[22px]">
+                  <button className=" w-full mx-2 px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
                     value 3.2M
                   </button>
-                  <button className=" w-full px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[12px] text-white rounded-[22px]">
+                  <button className=" w-full px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
                     Min allow$0
                   </button>
                 </div>
@@ -166,12 +183,12 @@ const OurActiveToken = () => {
               </div>
             </div>
             <div className="px-2">
-              <div className=" Stake_Your_Card p-3 ">
+              <div className=" Stake_Your_Card p-3 h-full ">
                 <div className=" flex ">
                   <img
                     src={metaldollar}
                     alt="metaldollar"
-                    className="bg-[#262D57] px-2.5 py-2 rounded-lg"
+                    className="bg-[#262D57] px-2.5 py-2 rounded-lg tokenimg"
                   />
                   <div className=" ms-4">
                     <h2 className=" font-bold font-Raleway text-lg text-white">
@@ -183,13 +200,13 @@ const OurActiveToken = () => {
                   </div>
                 </div>
                 <div className=" mt-6 flex justify-between">
-                  <button className=" w-full px-1 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[12px] text-white rounded-[22px]">
+                  <button className=" w-full px-1 sm:px-[3px] py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
                     Total raise 69k
                   </button>
-                  <button className=" w-full mx-2 px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[12px] text-white rounded-[22px]">
+                  <button className=" w-full mx-2 px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
                     value 3.2M
                   </button>
-                  <button className=" w-full px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[12px] text-white rounded-[22px]">
+                  <button className=" w-full px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
                     Min allow$0
                   </button>
                 </div>
@@ -221,12 +238,12 @@ const OurActiveToken = () => {
               </div>
             </div>
             <div className="px-2">
-              <div className=" Stake_Your_Card p-3 ">
+              <div className=" Stake_Your_Card p-3  h-full">
                 <div className=" flex ">
                   <img
                     src={MetalDao}
                     alt="MetalDao"
-                    className="bg-[#262D57] px-2.5 py-2 rounded-lg"
+                    className="bg-[#262D57] px-2.5 py-2 rounded-lg tokenimg"
                   />
                   <div className=" ms-4">
                     <h2 className=" font-bold font-Raleway text-lg text-white">
@@ -238,13 +255,13 @@ const OurActiveToken = () => {
                   </div>
                 </div>
                 <div className=" mt-6 flex justify-between">
-                  <button className=" w-full px-1 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[12px] text-white rounded-[22px]">
+                  <button className=" w-full px-1 sm:px-[3px] py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
                     Total raise 69k
                   </button>
-                  <button className=" w-full mx-2 px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[12px] text-white rounded-[22px]">
+                  <button className=" w-full mx-2 px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
                     value 3.2M
                   </button>
-                  <button className=" w-full px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[12px] text-white rounded-[22px]">
+                  <button className=" w-full px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
                     Min allow$0
                   </button>
                 </div>
@@ -276,12 +293,12 @@ const OurActiveToken = () => {
               </div>
             </div>
             <div className="px-2">
-              <div className=" Stake_Your_Card p-3 ">
+              <div className=" Stake_Your_Card p-3  h-full">
                 <div className=" flex ">
                   <img
                     src={MetalDao}
                     alt="MetalDao"
-                    className="bg-[#262D57] px-2.5 py-2 rounded-lg"
+                    className="bg-[#262D57] px-2.5 py-2 rounded-lg tokenimg"
                   />
                   <div className=" ms-4">
                     <h2 className=" font-bold font-Raleway text-lg text-white">
@@ -293,13 +310,13 @@ const OurActiveToken = () => {
                   </div>
                 </div>
                 <div className=" mt-6 flex justify-between">
-                  <button className=" w-full px-1 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[12px] text-white rounded-[22px]">
+                  <button className=" w-full px-1 sm:px-[3px] py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
                     Total raise 69k
                   </button>
-                  <button className=" w-full mx-2 px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[12px] text-white rounded-[22px]">
+                  <button className=" w-full mx-2 px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
                     value 3.2M
                   </button>
-                  <button className=" w-full px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[12px] text-white rounded-[22px]">
+                  <button className=" w-full px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
                     Min allow$0
                   </button>
                 </div>
@@ -331,12 +348,12 @@ const OurActiveToken = () => {
               </div>
             </div>
             <div className="px-2">
-              <div className=" Stake_Your_Card p-3 ">
+              <div className=" Stake_Your_Card p-3  h-full">
                 <div className=" flex ">
                   <img
                     src={MetalDao}
                     alt="MetalDao"
-                    className="bg-[#262D57] px-2.5 py-2 rounded-lg"
+                    className="bg-[#262D57] px-2.5 py-2 rounded-lg tokenimg"
                   />
                   <div className=" ms-4">
                     <h2 className=" font-bold font-Raleway text-lg text-white">
@@ -348,13 +365,13 @@ const OurActiveToken = () => {
                   </div>
                 </div>
                 <div className=" mt-6 flex justify-between">
-                  <button className=" w-full px-1 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[12px] text-white rounded-[22px]">
+                  <button className=" w-full px-1 sm:px-[3px] py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
                     Total raise 69k
                   </button>
-                  <button className=" w-full mx-2 px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[12px] text-white rounded-[22px]">
+                  <button className=" w-full mx-2 px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
                     value 3.2M
                   </button>
-                  <button className=" w-full px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[12px] text-white rounded-[22px]">
+                  <button className=" w-full px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
                     Min allow$0
                   </button>
                 </div>
@@ -386,11 +403,6 @@ const OurActiveToken = () => {
               </div>
             </div>
           </Slider>
-          <div className=" text-center py-10">
-            <button className=" text-white bg-[#0B0F37] font-semibold text-[16px] border py-2 rounded-full px-14 border-opacity-20 border-[white]">
-              Show All Tokens Available to be Staked
-            </button>
-          </div>
         </div>
       </section>
     </>

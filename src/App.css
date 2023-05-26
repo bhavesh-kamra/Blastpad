@@ -28,6 +28,11 @@ body {
   background-size: cover;
 }
 
+.tokenimg{
+  height: 70px;
+  width: 70px;
+}
+
 /* nav */
 @media (max-width:1024px) {
   .mobileview {
@@ -92,7 +97,7 @@ body {
 }
 @media (min-width:1200px) {
   .container{
-    max-width: 1176px;
+    max-width: 1140px !important;
   }
   
 }
