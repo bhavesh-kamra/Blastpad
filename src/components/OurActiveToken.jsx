@@ -1,5 +1,9 @@
 import React from "react";
 import MetalDao from "../assets/images/png/metal.png";
+import Bitcoin from "../assets/images/png/Bitcoin.png";
+import metaldollar from "../assets/images/png/metalDallor.png";
+
+
 import present12 from "../assets/images/png/Parsent12.png";
 import rocket from "../assets/images/png/rocket.png";
 import Slider from "react-slick";
@@ -76,16 +80,16 @@ const OurActiveToken = () => {
                 <div className=" Stake_Your_Card p-4">
                   <div className=" flex ">
                     <img
-                      src={MetalDao}
-                      alt="MetalDao"
+                      src={Bitcoin}
+                      alt="bitcoin"
                       className="bg-[#262D57] px-2.5 py-2 rounded-lg"
                     />
                     <div className=" ms-4">
                       <h2 className=" font-bold font-Raleway text-lg text-white">
-                        Metal DAO
+                        Bitcoin
                       </h2>
                       <p className=" font-Raleway font-normal text-sm text-white opacity-70">
-                        $METAL
+                        $BTC
                       </p>
                     </div>
                   </div>
@@ -131,16 +135,16 @@ const OurActiveToken = () => {
                 <div className=" Stake_Your_Card p-4">
                   <div className=" flex ">
                     <img
-                      src={MetalDao}
+                      src={metaldollar}
                       alt="MetalDao"
                       className="bg-[#262D57] px-2.5 py-2 rounded-lg"
                     />
                     <div className=" ms-4">
                       <h2 className=" font-bold font-Raleway text-lg text-white">
-                        Metal DAO
+                        Metal Dollar
                       </h2>
                       <p className=" font-Raleway font-normal text-sm text-white opacity-70">
-                        $METAL
+                        $XMD
                       </p>
                     </div>
                   </div>
