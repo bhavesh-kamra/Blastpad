@@ -3,7 +3,7 @@ import blastpadman from "../assets/images/png/blastpadman.png";
 
 const StakeBlastpadBonus = () => {
   return (
-    <section className=" bgs take1">
+    <section className=" bgblastpadbonus take1">
       <div className="container  mx-auto px-3">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center">
           <div className=" mx-auto pb-8">

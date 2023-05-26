@@ -14,13 +14,44 @@ const OurActiveToken = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ],
   };
+
   return (
     <>
-      <section>
+      <section className="bgactivetoken">
         <div className=" container max-w-[1176px] mx-auto px-3">
-          <div className=" text-center py-6 mt-5">
-            <h2 className=" font-Raleway text-[40px] text-white font-semibold">Our Active Token</h2>
+          <div className=" text-center pt-9 pb-6">
+            <h2 className=" font-Raleway text-[40px] text-white font-semibold">
+              Our Active Token
+            </h2>
           </div>
 
           <Slider {...settings}>
@@ -355,6 +386,11 @@ const OurActiveToken = () => {
               </div>
             </div>
           </Slider>
+          <div className=" text-center py-10">
+            <button className=" text-white bg-[#0B0F37] font-semibold text-[16px] border py-2 rounded-full px-14 border-opacity-20 border-[white]">
+              Show All Tokens Available to be Staked
+            </button>
+          </div>
         </div>
       </section>
     </>

@@ -19,6 +19,14 @@ body {
   background-image: url(../src/assets/images/png/tokenbg1.png);
   background-size: cover;
 }
+.bgactivetoken{
+  background-image: url(../src/assets/images/png/bgactivetoken.png);
+  background-size: cover;
+}
+.bgblastpadbonus{
+  background-image: url(../src/assets/images/png/bgblastpadbonus.png);
+  background-size: cover;
+}
 
 /* nav */
 @media (max-width:1024px) {
