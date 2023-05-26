@@ -1,5 +1,5 @@
-import React from 'react'
-import proton from "../assets/images/svg/proton.svg"
+import React from "react";
+import proton from "../assets/images/svg/proton-an.svg";
 
 const Building = () => {
   return (
@@ -36,6 +36,6 @@ const Building = () => {
       </div>
     </section>
   );
-}
+};
 
-export default Building
+export default Building;

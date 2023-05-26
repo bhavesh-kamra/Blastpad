@@ -3,10 +3,13 @@ import Airplane_Img from "../assets/images/png/Airplane_Img.png";
 import LineImg from "../assets/images/png/lineImg.png";
 import LeftSideArrow from "../assets/images/png/leftsiderArrow.png";
 import rightArrow from "../assets/images/png/rightsideArrow.png";
+import Clouds from "../assets/images/png/clouds.png";
+import bg_Launch from "../assets/images/png/bg_launch.png";
 const LaunchYourProject = () => {
   return (
     <>
-      <section className="py-8">
+      <section className="py-8  relative">
+        <img src={bg_Launch} alt="bg_Launch" className=" absolute z-[-1]" />
         <div className=" container max-w-[1140px] mx-auto px-3">
           <h2 className=" font-Raleway font-bold text-xxl text-white text-center">
             Launch Your Project
@@ -93,6 +96,11 @@ const LaunchYourProject = () => {
             </div>
           </div>
         </div>
+        {/* <img
+          src={Clouds}
+          alt="Clouds"
+          className=" absolute z-[-1] bottom-[-30px]"
+        /> */}
       </section>
     </>
   );

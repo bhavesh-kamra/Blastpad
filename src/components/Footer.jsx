@@ -9,7 +9,7 @@ import footerSky from "../assets/images/png/footerSky.png";
 const Footer = () => {
   return (
     <>
-      <section className="   pt-10 mt-20 border-t-2 border-[#393D55]">
+      <section className="pt-10 mt-20 border-t-2 border-[#393D55]">
         <div className=" container max-w-[1176px] mx-auto px-3">
           <div className=" sm:flex items-center justify-between">
             <div className=" text-center">

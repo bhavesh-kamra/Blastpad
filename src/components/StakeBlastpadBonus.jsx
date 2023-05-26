@@ -1,9 +1,9 @@
-import React from 'react'
-import blastpadman from "../assets/images/png/blastpadman.png"
+import React from "react";
+import blastpadman from "../assets/images/png/blastpadman.png";
 
 const StakeBlastpadBonus = () => {
   return (
-    <section className=" bg-primary bgstake1">
+    <section className=" bgs take1">
       <div className="container  mx-auto px-3">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center">
           <div className=" mx-auto pb-8">
@@ -31,6 +31,6 @@ const StakeBlastpadBonus = () => {
       </div>
     </section>
   );
-}
+};
 
-export default StakeBlastpadBonus
+export default StakeBlastpadBonus;

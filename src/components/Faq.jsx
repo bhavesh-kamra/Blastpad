@@ -1,5 +1,6 @@
 import React from "react";
 import Arrow from "../assets/images/png/Arrow.png";
+import FagBgImg from "../assets/images/png/Faq_bg_img.png";
 import { useState } from "react";
 const SliderDataValue = [
   {
@@ -43,7 +44,12 @@ const Faq = () => {
   };
   return (
     <>
-      <section className="bg_img_faq py-10">
+      <section className="b g_img_faq py-10 relative">
+        {/* <img
+          src={FagBgImg}
+          alt="FagBgImg"
+          className=" absolute z-[-1] right-0 w-full top-0"
+        /> */}
         <div className=" container max-w-[1176px] mx-auto px-3">
           <p className=" text-xxl font-Raleway font-semibold text-white pb-3 sm:pb-14 text-center sm:text-start">
             Frequently Asked Questions

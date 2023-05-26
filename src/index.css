@@ -27,6 +27,11 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+.LaunchYourProject_bg_Img {
+    background-image: url(../src/assets/images/png/LaunchYourProject_bg_Img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 .add_token_btn {
     background: linear-gradient(254.15deg, rgba(68, 120, 249, 0.1) 11.47%, rgba(7, 3, 128, 0.1) 86.69%);

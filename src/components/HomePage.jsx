@@ -4,6 +4,7 @@ import Exponentiral from "./Exponential";
 import Building from "./Building";
 import LaunchYourProject from "./LaunchYourProject";
 import Faq from "./Faq";
+import Footer from "./Footer";
 const HomePage = () => {
   return (
     <>
@@ -12,6 +13,7 @@ const HomePage = () => {
       <Building />
       <LaunchYourProject />
       <Faq />
+      <Footer />
     </>
   );
 };
