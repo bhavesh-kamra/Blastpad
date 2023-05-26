@@ -4,10 +4,13 @@ import circle from "../assets/images/png/circle.png"
 import globe1 from "../assets/images/png/globe1.png"
 import rocket1 from "../assets/images/png/rocket1.png";
 import whitecloud from "../assets/images/png/whitecloud.png";
+import blur3 from "../assets/images/png/blur3.png";
+
 
 const Exponential = () => {
     return (
       <section className=" bg-primary bghero1 py-[50px] relative overflow-hidden">
+        <img className=' absolute top-0 left-0' src={blur3} alt="blur" />
         <div className="container mx-auto px-3">
           <div className=" grid  grid-cols-1 lg:grid-cols-2 lg:py-[80px]">
             <div className=' lg:order-1 order-2 text-center lg:text-left'>

@@ -54,13 +54,13 @@ const OurActiveToken = () => {
       <section className="bgactivetoken relative">
         <img
           onClick={() => slider.current.slickPrev()}
-          className=" absolute top-[20%] left-5"
+          className=" absolute top-[20%] left-5 sm:left-[6%] md:left-[10%] xl:left-3 2xl:left-[9%]   xl:top-[60%]"
           src={rightArrow}
           alt=""
         />
         <img
           onClick={() => slider.current.slickNext()}
-          className=" absolute  top-[20%] right-5"
+          className=" absolute  top-[20%] right-5 sm:left-[18%] xl:top-[60%] xl:left-[95%] 2xl:xl:left-[87%]"
           src={leftArrow}
           alt="#"
         />
