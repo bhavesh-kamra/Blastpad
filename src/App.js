@@ -10,9 +10,9 @@ function App() {
     <>
       <Routes>
         <Route path="/" Component={HomePage} />
-        <Route path="Staking" Component={Staking} />
-        <Route path="Token" Component={Token} />
-        <Route path="Airdrop" Component={Airdrop} />
+        <Route path="/Staking" Component={Staking} />
+        <Route path="/Token" Component={Token} />
+        <Route path="/Airdrop" Component={Airdrop} />
       </Routes>
     </>
   );

@@ -37,21 +37,21 @@ const MyNav = () => {
               </a>
             </li>
 
-            <Link to="Airdrop">
+            <Link to="/Airdrop">
               <li>
                 <a className=" text-white text-xsm" href="">
                   Token AirDrop
                 </a>
               </li>
             </Link>
-            <Link to="Staking">
+            <Link to="/Staking">
               <li>
                 <a className=" text-white text-xsm" href="">
                   Token Staking
                 </a>
               </li>
             </Link>
-            <Link to="Token">
+            <Link to="/Token">
               <li className=" lg:me-10">
                 <a className=" text-white text-xsm" href="">
                   Create a Token
