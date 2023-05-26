@@ -71,7 +71,7 @@ const OurActiveToken = () => {
             </h2>
           </div>
 
-          <Slider  ref={slider} {...settings}>
+          <Slider ref={slider} {...settings}>
             <div className="px-2">
               <div className=" Stake_Your_Card p-3  h-full">
                 <div className=" flex ">
