@@ -51,19 +51,7 @@ const OurActiveToken = () => {
   };
   return (
     <>
-      <section className="bgactivetoken relative">
-        <img
-          onClick={() => slider.current.slickPrev()}
-          className=" absolute top-[16%] left-5 sm:left-[6%] md:left-[10%] xl:left-3 2xl:left-[9%]   xl:top-[60%]"
-          src={rightArrow}
-          alt=""
-        />
-        <img
-          onClick={() => slider.current.slickNext()}
-          className=" absolute  top-[16%] right-5 sm:left-[18%] xl:top-[60%] xl:left-[95%] 2xl:xl:left-[87%]"
-          src={leftArrow}
-          alt="#"
-        />
+      <section className="bgactivetoken ">
         <div className=" container mx-auto px-3">
           <div className=" text-center pt-9 pb-6 mb-10">
             <h2 className=" font-Raleway text-[32px] text-white font-semibold">
@@ -71,340 +59,378 @@ const OurActiveToken = () => {
             </h2>
           </div>
 
-          <Slider ref={slider} {...settings}>
-            <div className="px-2">
-              <div className=" Stake_Your_Card p-3  h-full">
-                <div className=" flex ">
+          <div className="relative">
+            <img
+              onClick={() => slider.current.slickPrev()}
+              className=" absolute top-[-18%] left-0   xl:left-[-6%]    xl:top-[50%]"
+              src={rightArrow}
+              alt=""
+            />
+            <img
+              onClick={() => slider.current.slickNext()}
+              className=" absolute  top-[-18%]  right-0  xl:top-[50%] xl:right-[-6%]"
+              src={leftArrow}
+              alt="#"
+            />
+            <Slider ref={slider} {...settings}>
+              <div className="px-2">
+                <div className=" Stake_Your_Card p-3  h-full">
+                  <div className=" flex ">
+                    <img
+                      src={MetalDao}
+                      alt="MetalDao"
+                      className="bg-[#262D57] px-2.5 py-2 rounded-lg tokenimg"
+                    />
+                    <div className=" ms-4">
+                      <h2 className=" font-bold font-Raleway text-lg text-white">
+                        Metal DAO
+                      </h2>
+                      <p className=" font-Raleway font-normal text-sm text-white opacity-70">
+                        $METAL
+                      </p>
+                    </div>
+                  </div>
+                  <div className=" mt-6 flex justify-between">
+                    <button className=" w-full px-1 sm:px-[3px] py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
+                      Total raise 69k
+                    </button>
+                    <button className=" w-full mx-2 px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
+                      value 3.2M
+                    </button>
+                    <button className=" w-full px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
+                      Min allow$0
+                    </button>
+                  </div>
                   <img
-                    src={MetalDao}
-                    alt="MetalDao"
-                    className="bg-[#262D57] px-2.5 py-2 rounded-lg tokenimg"
+                    src={present12}
+                    alt="present12"
+                    className=" mt-8 w-full"
                   />
-                  <div className=" ms-4">
-                    <h2 className=" font-bold font-Raleway text-lg text-white">
-                      Metal DAO
-                    </h2>
-                    <p className=" font-Raleway font-normal text-sm text-white opacity-70">
-                      $METAL
+                  <div className=" flex justify-between mt-3">
+                    <p className=" font-Raleway font-normal text-xsm text-white ">
+                      0/87,074 MECHA
+                    </p>
+                    <p className=" font-Raleway font-normal text-xsm text-white me-4">
+                      10 BUSD
                     </p>
                   </div>
-                </div>
-                <div className=" mt-6 flex justify-between">
-                  <button className=" w-full px-1 sm:px-[3px] py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
-                    Total raise 69k
-                  </button>
-                  <button className=" w-full mx-2 px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
-                    value 3.2M
-                  </button>
-                  <button className=" w-full px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
-                    Min allow$0
-                  </button>
-                </div>
-                <img src={present12} alt="present12" className=" mt-8 w-full" />
-                <div className=" flex justify-between mt-3">
-                  <p className=" font-Raleway font-normal text-xsm text-white ">
-                    0/87,074 MECHA
-                  </p>
-                  <p className=" font-Raleway font-normal text-xsm text-white me-4">
-                    10 BUSD
-                  </p>
-                </div>
-                <div className="flex items-center justify-between mt-8">
-                  <button className="slider_btn font-Raleway font-semibold text-white text-sm px-10 py-3">
-                    Active
-                  </button>
-                  <div className=" flex">
-                    <a href="#">
-                      <img src={rocket} alt="rocate" />
-                    </a>
-                    <a
-                      href="#"
-                      className=" font-Inter font-medium text-sm text-white ps-2 "
-                    >
-                      BlastPad.io
-                    </a>
+                  <div className="flex items-center justify-between mt-8">
+                    <button className="slider_btn font-Raleway font-semibold text-white text-sm px-10 py-3">
+                      Active
+                    </button>
+                    <div className=" flex">
+                      <a href="#">
+                        <img src={rocket} alt="rocate" />
+                      </a>
+                      <a
+                        href="#"
+                        className=" font-Inter font-medium text-sm text-white ps-2 "
+                      >
+                        BlastPad.io
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="px-2">
-              <div className=" Stake_Your_Card p-3  h-full">
-                <div className=" flex ">
+              <div className="px-2">
+                <div className=" Stake_Your_Card p-3  h-full">
+                  <div className=" flex ">
+                    <img
+                      src={bitcoin}
+                      alt="bitcoin"
+                      className="bg-[#262D57] px-2.5 py-2 rounded-lg tokenimg"
+                    />
+                    <div className=" ms-4">
+                      <h2 className=" font-bold font-Raleway text-lg text-white">
+                        Bitcoin
+                      </h2>
+                      <p className=" font-Raleway font-normal text-sm text-white opacity-70">
+                        $BTC
+                      </p>
+                    </div>
+                  </div>
+                  <div className=" mt-6 flex justify-between">
+                    <button className=" w-full px-1 sm:px-[3px] py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
+                      Total raise 69k
+                    </button>
+                    <button className=" w-full mx-2 px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
+                      value 3.2M
+                    </button>
+                    <button className=" w-full px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
+                      Min allow$0
+                    </button>
+                  </div>
                   <img
-                    src={bitcoin}
-                    alt="bitcoin"
-                    className="bg-[#262D57] px-2.5 py-2 rounded-lg tokenimg"
+                    src={present12}
+                    alt="present12"
+                    className=" mt-8 w-full"
                   />
-                  <div className=" ms-4">
-                    <h2 className=" font-bold font-Raleway text-lg text-white">
-                      Bitcoin
-                    </h2>
-                    <p className=" font-Raleway font-normal text-sm text-white opacity-70">
-                      $BTC
+                  <div className=" flex justify-between mt-3">
+                    <p className=" font-Raleway font-normal text-xsm text-white ">
+                      0/87,074 MECHA
+                    </p>
+                    <p className=" font-Raleway font-normal text-xsm text-white me-4">
+                      10 BUSD
                     </p>
                   </div>
-                </div>
-                <div className=" mt-6 flex justify-between">
-                  <button className=" w-full px-1 sm:px-[3px] py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
-                    Total raise 69k
-                  </button>
-                  <button className=" w-full mx-2 px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
-                    value 3.2M
-                  </button>
-                  <button className=" w-full px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
-                    Min allow$0
-                  </button>
-                </div>
-                <img src={present12} alt="present12" className=" mt-8 w-full" />
-                <div className=" flex justify-between mt-3">
-                  <p className=" font-Raleway font-normal text-xsm text-white ">
-                    0/87,074 MECHA
-                  </p>
-                  <p className=" font-Raleway font-normal text-xsm text-white me-4">
-                    10 BUSD
-                  </p>
-                </div>
-                <div className="flex items-center justify-between mt-8">
-                  <button className="slider_btn font-Raleway font-semibold text-white text-sm px-10 py-3">
-                    Active
-                  </button>
-                  <div className=" flex">
-                    <a href="#">
-                      <img src={rocket} alt="rocate" />
-                    </a>
-                    <a
-                      href="#"
-                      className=" font-Inter font-medium text-sm text-white ps-2 "
-                    >
-                      BlastPad.io
-                    </a>
+                  <div className="flex items-center justify-between mt-8">
+                    <button className="slider_btn font-Raleway font-semibold text-white text-sm px-10 py-3">
+                      Active
+                    </button>
+                    <div className=" flex">
+                      <a href="#">
+                        <img src={rocket} alt="rocate" />
+                      </a>
+                      <a
+                        href="#"
+                        className=" font-Inter font-medium text-sm text-white ps-2 "
+                      >
+                        BlastPad.io
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="px-2">
-              <div className=" Stake_Your_Card p-3 h-full ">
-                <div className=" flex ">
+              <div className="px-2">
+                <div className=" Stake_Your_Card p-3 h-full ">
+                  <div className=" flex ">
+                    <img
+                      src={metaldollar}
+                      alt="metaldollar"
+                      className="bg-[#262D57] px-2.5 py-2 rounded-lg tokenimg"
+                    />
+                    <div className=" ms-4">
+                      <h2 className=" font-bold font-Raleway text-lg text-white">
+                        Metal Dollar
+                      </h2>
+                      <p className=" font-Raleway font-normal text-sm text-white opacity-70">
+                        $XMD
+                      </p>
+                    </div>
+                  </div>
+                  <div className=" mt-6 flex justify-between">
+                    <button className=" w-full px-1 sm:px-[3px] py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
+                      Total raise 69k
+                    </button>
+                    <button className=" w-full mx-2 px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
+                      value 3.2M
+                    </button>
+                    <button className=" w-full px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
+                      Min allow$0
+                    </button>
+                  </div>
                   <img
-                    src={metaldollar}
-                    alt="metaldollar"
-                    className="bg-[#262D57] px-2.5 py-2 rounded-lg tokenimg"
+                    src={present12}
+                    alt="present12"
+                    className=" mt-8 w-full"
                   />
-                  <div className=" ms-4">
-                    <h2 className=" font-bold font-Raleway text-lg text-white">
-                      Metal Dollar
-                    </h2>
-                    <p className=" font-Raleway font-normal text-sm text-white opacity-70">
-                      $XMD
+                  <div className=" flex justify-between mt-3">
+                    <p className=" font-Raleway font-normal text-xsm text-white ">
+                      0/87,074 MECHA
+                    </p>
+                    <p className=" font-Raleway font-normal text-xsm text-white me-4">
+                      10 BUSD
                     </p>
                   </div>
-                </div>
-                <div className=" mt-6 flex justify-between">
-                  <button className=" w-full px-1 sm:px-[3px] py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
-                    Total raise 69k
-                  </button>
-                  <button className=" w-full mx-2 px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
-                    value 3.2M
-                  </button>
-                  <button className=" w-full px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
-                    Min allow$0
-                  </button>
-                </div>
-                <img src={present12} alt="present12" className=" mt-8 w-full" />
-                <div className=" flex justify-between mt-3">
-                  <p className=" font-Raleway font-normal text-xsm text-white ">
-                    0/87,074 MECHA
-                  </p>
-                  <p className=" font-Raleway font-normal text-xsm text-white me-4">
-                    10 BUSD
-                  </p>
-                </div>
-                <div className="flex items-center justify-between mt-8">
-                  <button className="slider_btn font-Raleway font-semibold text-white text-sm px-10 py-3">
-                    Active
-                  </button>
-                  <div className=" flex">
-                    <a href="#">
-                      <img src={rocket} alt="rocate" />
-                    </a>
-                    <a
-                      href="#"
-                      className=" font-Inter font-medium text-sm text-white ps-2 "
-                    >
-                      BlastPad.io
-                    </a>
+                  <div className="flex items-center justify-between mt-8">
+                    <button className="slider_btn font-Raleway font-semibold text-white text-sm px-10 py-3">
+                      Active
+                    </button>
+                    <div className=" flex">
+                      <a href="#">
+                        <img src={rocket} alt="rocate" />
+                      </a>
+                      <a
+                        href="#"
+                        className=" font-Inter font-medium text-sm text-white ps-2 "
+                      >
+                        BlastPad.io
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="px-2">
-              <div className=" Stake_Your_Card p-3  h-full">
-                <div className=" flex ">
+              <div className="px-2">
+                <div className=" Stake_Your_Card p-3  h-full">
+                  <div className=" flex ">
+                    <img
+                      src={MetalDao}
+                      alt="MetalDao"
+                      className="bg-[#262D57] px-2.5 py-2 rounded-lg tokenimg"
+                    />
+                    <div className=" ms-4">
+                      <h2 className=" font-bold font-Raleway text-lg text-white">
+                        Metal DAO
+                      </h2>
+                      <p className=" font-Raleway font-normal text-sm text-white opacity-70">
+                        $METAL
+                      </p>
+                    </div>
+                  </div>
+                  <div className=" mt-6 flex justify-between">
+                    <button className=" w-full px-1 sm:px-[3px] py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
+                      Total raise 69k
+                    </button>
+                    <button className=" w-full mx-2 px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
+                      value 3.2M
+                    </button>
+                    <button className=" w-full px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
+                      Min allow$0
+                    </button>
+                  </div>
                   <img
-                    src={MetalDao}
-                    alt="MetalDao"
-                    className="bg-[#262D57] px-2.5 py-2 rounded-lg tokenimg"
+                    src={present12}
+                    alt="present12"
+                    className=" mt-8 w-full"
                   />
-                  <div className=" ms-4">
-                    <h2 className=" font-bold font-Raleway text-lg text-white">
-                      Metal DAO
-                    </h2>
-                    <p className=" font-Raleway font-normal text-sm text-white opacity-70">
-                      $METAL
+                  <div className=" flex justify-between mt-3">
+                    <p className=" font-Raleway font-normal text-xsm text-white ">
+                      0/87,074 MECHA
+                    </p>
+                    <p className=" font-Raleway font-normal text-xsm text-white me-4">
+                      10 BUSD
                     </p>
                   </div>
-                </div>
-                <div className=" mt-6 flex justify-between">
-                  <button className=" w-full px-1 sm:px-[3px] py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
-                    Total raise 69k
-                  </button>
-                  <button className=" w-full mx-2 px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
-                    value 3.2M
-                  </button>
-                  <button className=" w-full px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
-                    Min allow$0
-                  </button>
-                </div>
-                <img src={present12} alt="present12" className=" mt-8 w-full" />
-                <div className=" flex justify-between mt-3">
-                  <p className=" font-Raleway font-normal text-xsm text-white ">
-                    0/87,074 MECHA
-                  </p>
-                  <p className=" font-Raleway font-normal text-xsm text-white me-4">
-                    10 BUSD
-                  </p>
-                </div>
-                <div className="flex items-center justify-between mt-8">
-                  <button className="slider_btn font-Raleway font-semibold text-white text-sm px-10 py-3">
-                    Active
-                  </button>
-                  <div className=" flex">
-                    <a href="#">
-                      <img src={rocket} alt="rocate" />
-                    </a>
-                    <a
-                      href="#"
-                      className=" font-Inter font-medium text-sm text-white ps-2 "
-                    >
-                      BlastPad.io
-                    </a>
+                  <div className="flex items-center justify-between mt-8">
+                    <button className="slider_btn font-Raleway font-semibold text-white text-sm px-10 py-3">
+                      Active
+                    </button>
+                    <div className=" flex">
+                      <a href="#">
+                        <img src={rocket} alt="rocate" />
+                      </a>
+                      <a
+                        href="#"
+                        className=" font-Inter font-medium text-sm text-white ps-2 "
+                      >
+                        BlastPad.io
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="px-2">
-              <div className=" Stake_Your_Card p-3  h-full">
-                <div className=" flex ">
+              <div className="px-2">
+                <div className=" Stake_Your_Card p-3  h-full">
+                  <div className=" flex ">
+                    <img
+                      src={MetalDao}
+                      alt="MetalDao"
+                      className="bg-[#262D57] px-2.5 py-2 rounded-lg tokenimg"
+                    />
+                    <div className=" ms-4">
+                      <h2 className=" font-bold font-Raleway text-lg text-white">
+                        Metal DAO
+                      </h2>
+                      <p className=" font-Raleway font-normal text-sm text-white opacity-70">
+                        $METAL
+                      </p>
+                    </div>
+                  </div>
+                  <div className=" mt-6 flex justify-between">
+                    <button className=" w-full px-1 sm:px-[3px] py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
+                      Total raise 69k
+                    </button>
+                    <button className=" w-full mx-2 px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
+                      value 3.2M
+                    </button>
+                    <button className=" w-full px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
+                      Min allow$0
+                    </button>
+                  </div>
                   <img
-                    src={MetalDao}
-                    alt="MetalDao"
-                    className="bg-[#262D57] px-2.5 py-2 rounded-lg tokenimg"
+                    src={present12}
+                    alt="present12"
+                    className=" mt-8 w-full"
                   />
-                  <div className=" ms-4">
-                    <h2 className=" font-bold font-Raleway text-lg text-white">
-                      Metal DAO
-                    </h2>
-                    <p className=" font-Raleway font-normal text-sm text-white opacity-70">
-                      $METAL
+                  <div className=" flex justify-between mt-3">
+                    <p className=" font-Raleway font-normal text-xsm text-white ">
+                      0/87,074 MECHA
+                    </p>
+                    <p className=" font-Raleway font-normal text-xsm text-white me-4">
+                      10 BUSD
                     </p>
                   </div>
-                </div>
-                <div className=" mt-6 flex justify-between">
-                  <button className=" w-full px-1 sm:px-[3px] py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
-                    Total raise 69k
-                  </button>
-                  <button className=" w-full mx-2 px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
-                    value 3.2M
-                  </button>
-                  <button className=" w-full px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
-                    Min allow$0
-                  </button>
-                </div>
-                <img src={present12} alt="present12" className=" mt-8 w-full" />
-                <div className=" flex justify-between mt-3">
-                  <p className=" font-Raleway font-normal text-xsm text-white ">
-                    0/87,074 MECHA
-                  </p>
-                  <p className=" font-Raleway font-normal text-xsm text-white me-4">
-                    10 BUSD
-                  </p>
-                </div>
-                <div className="flex items-center justify-between mt-8">
-                  <button className="slider_btn font-Raleway font-semibold text-white text-sm px-10 py-3">
-                    Active
-                  </button>
-                  <div className=" flex">
-                    <a href="#">
-                      <img src={rocket} alt="rocate" />
-                    </a>
-                    <a
-                      href="#"
-                      className=" font-Inter font-medium text-sm text-white ps-2 "
-                    >
-                      BlastPad.io
-                    </a>
+                  <div className="flex items-center justify-between mt-8">
+                    <button className="slider_btn font-Raleway font-semibold text-white text-sm px-10 py-3">
+                      Active
+                    </button>
+                    <div className=" flex">
+                      <a href="#">
+                        <img src={rocket} alt="rocate" />
+                      </a>
+                      <a
+                        href="#"
+                        className=" font-Inter font-medium text-sm text-white ps-2 "
+                      >
+                        BlastPad.io
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="px-2">
-              <div className=" Stake_Your_Card p-3  h-full">
-                <div className=" flex ">
+              <div className="px-2">
+                <div className=" Stake_Your_Card p-3  h-full">
+                  <div className=" flex ">
+                    <img
+                      src={MetalDao}
+                      alt="MetalDao"
+                      className="bg-[#262D57] px-2.5 py-2 rounded-lg tokenimg"
+                    />
+                    <div className=" ms-4">
+                      <h2 className=" font-bold font-Raleway text-lg text-white">
+                        Metal DAO
+                      </h2>
+                      <p className=" font-Raleway font-normal text-sm text-white opacity-70">
+                        $METAL
+                      </p>
+                    </div>
+                  </div>
+                  <div className=" mt-6 flex justify-between">
+                    <button className=" w-full px-1 sm:px-[3px] py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
+                      Total raise 69k
+                    </button>
+                    <button className=" w-full mx-2 px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
+                      value 3.2M
+                    </button>
+                    <button className=" w-full px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
+                      Min allow$0
+                    </button>
+                  </div>
                   <img
-                    src={MetalDao}
-                    alt="MetalDao"
-                    className="bg-[#262D57] px-2.5 py-2 rounded-lg tokenimg"
+                    src={present12}
+                    alt="present12"
+                    className=" mt-8 w-full"
                   />
-                  <div className=" ms-4">
-                    <h2 className=" font-bold font-Raleway text-lg text-white">
-                      Metal DAO
-                    </h2>
-                    <p className=" font-Raleway font-normal text-sm text-white opacity-70">
-                      $METAL
+                  <div className=" flex justify-between mt-3">
+                    <p className=" font-Raleway font-normal text-xsm text-white ">
+                      0/87,074 MECHA
+                    </p>
+                    <p className=" font-Raleway font-normal text-xsm text-white me-4">
+                      10 BUSD
                     </p>
                   </div>
-                </div>
-                <div className=" mt-6 flex justify-between">
-                  <button className=" w-full px-1 sm:px-[3px] py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
-                    Total raise 69k
-                  </button>
-                  <button className=" w-full mx-2 px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
-                    value 3.2M
-                  </button>
-                  <button className=" w-full px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
-                    Min allow$0
-                  </button>
-                </div>
-                <img src={present12} alt="present12" className=" mt-8 w-full" />
-                <div className=" flex justify-between mt-3">
-                  <p className=" font-Raleway font-normal text-xsm text-white ">
-                    0/87,074 MECHA
-                  </p>
-                  <p className=" font-Raleway font-normal text-xsm text-white me-4">
-                    10 BUSD
-                  </p>
-                </div>
-                <div className="flex items-center justify-between mt-8">
-                  <button className="slider_btn font-Raleway font-semibold text-white text-sm px-10 py-3">
-                    Active
-                  </button>
-                  <div className=" flex">
-                    <a href="#">
-                      <img src={rocket} alt="rocate" />
-                    </a>
-                    <a
-                      href="#"
-                      className=" font-Inter font-medium text-sm text-white ps-2 "
-                    >
-                      BlastPad.io
-                    </a>
+                  <div className="flex items-center justify-between mt-8">
+                    <button className="slider_btn font-Raleway font-semibold text-white text-sm px-10 py-3">
+                      Active
+                    </button>
+                    <div className=" flex">
+                      <a href="#">
+                        <img src={rocket} alt="rocate" />
+                      </a>
+                      <a
+                        href="#"
+                        className=" font-Inter font-medium text-sm text-white ps-2 "
+                      >
+                        BlastPad.io
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </Slider>
+            </Slider>
+          </div>
           <div className=" text-center py-7">
-            <button className=" text-white text-[13px] sm:text-[16px]  border border-[#31355A]  font-Raleway font-semibold px-6 sm:px-9 md:px-14 py-3 rounded-full">
+            <button className=" text-white text-[13px] sm:text-[16px]  border border-[#31355A] bg-[#0B0F37]  font-Raleway font-semibold px-6 sm:px-9 md:px-14 py-3 rounded-full">
               Show All Tokens Available to be Staked
             </button>
           </div>
