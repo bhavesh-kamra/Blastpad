@@ -54,13 +54,13 @@ const OurActiveToken = () => {
       <section className="bgactivetoken relative">
         <img
           onClick={() => slider.current.slickPrev()}
-          className=" absolute top-[20%] left-5 sm:left-[6%] md:left-[10%] xl:left-3 2xl:left-[9%]   xl:top-[60%]"
+          className=" absolute top-[16%] left-5 sm:left-[6%] md:left-[10%] xl:left-3 2xl:left-[9%]   xl:top-[60%]"
           src={rightArrow}
           alt=""
         />
         <img
           onClick={() => slider.current.slickNext()}
-          className=" absolute  top-[20%] right-5 sm:left-[18%] xl:top-[60%] xl:left-[95%] 2xl:xl:left-[87%]"
+          className=" absolute  top-[16%] right-5 sm:left-[18%] xl:top-[60%] xl:left-[95%] 2xl:xl:left-[87%]"
           src={leftArrow}
           alt="#"
         />
@@ -404,7 +404,7 @@ const OurActiveToken = () => {
             </div>
           </Slider>
           <div className=" text-center py-7">
-            <button className=" text-white border border-[#31355A]  font-Raleway font-semibold px-10 py-2 rounded-full">
+            <button className=" text-white text-[13px] sm:text-[16px]  border border-[#31355A]  font-Raleway font-semibold px-6 sm:px-9 md:px-14 py-3 rounded-full">
               Show All Tokens Available to be Staked
             </button>
           </div>
