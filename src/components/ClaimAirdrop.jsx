@@ -146,11 +146,9 @@ const ClaimAirdrop = ({ value }) => {
                     className="Stake_Your_Card p-6"
                   >
                     <div className=" flex items-center">
-                      <img
-                        src={value.Img}
-                        alt="Bitcoin"
-                        className="bg-[#262D57] px-2.5 py-2 rounded-lg"
-                      />
+                      <div className="bg-[#262D57] w-[70px] h-[70px] flex justify-center items-center rounded-lg">
+                        <img src={value.Img} alt="Bitcoin" />
+                      </div>
                       <div className=" ms-3">
                         <h2 className=" font-Raleway font-bold text-white text-lg">
                           {value.heading1}
