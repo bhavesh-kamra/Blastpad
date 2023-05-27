@@ -7,6 +7,9 @@ export default function Example() {
   return (
     <section className="bg_img_faq">
       <div className=" container max-w-[1176px] mx-auto px-3 pt-16 pb-10">
+        <h2 className=" font-Raleway text-[32px] text-white font-semibold text-center mb-12">
+          Choose The Air Drop Type
+        </h2>
         <div className=" lg:flex gap-10">
           <div className=" lg:max-w-[399px] w-full relative">
             <div className=" blurChoose"></div>

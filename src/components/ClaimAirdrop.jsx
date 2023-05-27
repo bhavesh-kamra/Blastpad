@@ -6,65 +6,78 @@ import "slick-carousel/slick/slick-theme.css";
 import { useRef } from "react";
 import rightArrow from "../assets/images/png/PresArrow.png";
 import leftArrow from "../assets/images/png/nextArrow.png";
+import metaDallor from "../assets/images/png/metalDallor.png";
+import Meata from "../assets/images/png/metal.png";
 export const sliderData = [
   {
-    Img: Bitcoin,
-    heading1: "Bitcoin",
-    heading2: "$BTC",
-    Total: "Total Value",
-    TotalValue: "$1,003,235,34",
-    YourToken: "Stake your token...",
-    YourTokenValue: "Claim to air drop...",
+    Img: Meata,
+    heading1: "Metal DAO",
+    heading2: "$METAL",
+    Total: "Total Supply",
+    TotalValue: "1,235,34",
+    YourToken: "Price",
+    YourTokenValue: "$0.0012324",
+    btn: "View Profile",
+    btn2: "  Claim AirDrop",
+  },
+  {
+    Img: metaDallor,
+    heading1: "Metal DAO",
+    heading2: "$METAL",
+    Total: "Total Supply",
+    TotalValue: "1,235,34",
+    YourToken: "Price",
+    YourTokenValue: "$0.0012324",
     btn: "View Profile",
     btn2: "  Claim AirDrop",
   },
   {
     Img: Bitcoin,
-    heading1: "Bitcoin",
-    heading2: "$BTC",
-    Total: "Total Value",
-    TotalValue: "$1,003,235,34",
-    YourToken: "Stake your token...",
-    YourTokenValue: "Claim to air drop...",
+    heading1: "Metal DAO",
+    heading2: "$METAL",
+    Total: "Total Supply",
+    TotalValue: "1,235,34",
+    YourToken: "Price",
+    YourTokenValue: "$0.0012324",
+    btn: "View Profile",
+    btn2: "  Claim AirDrop",
+  },
+  {
+    Img: Meata,
+    heading1: "Metal DAO",
+    heading2: "$METAL",
+    Total: "Total Supply",
+    TotalValue: "1,235,34",
+    YourToken: "Price",
+    YourTokenValue: "$0.0012324",
+    btn: "View Profile",
+    btn2: "  Claim AirDrop",
+  },
+  {
+    Img: metaDallor,
+    heading1: "Metal DAO",
+    heading2: "$METAL",
+    Total: "Total Supply",
+    TotalValue: "1,235,34",
+    YourToken: "Price",
+    YourTokenValue: "$0.0012324",
     btn: "View Profile",
     btn2: "  Claim AirDrop",
   },
   {
     Img: Bitcoin,
-    heading1: "Bitcoin",
-    heading2: "$BTC",
-    Total: "Total Value",
-    TotalValue: "$1,003,235,34",
-    YourToken: "Stake your token...",
-    YourTokenValue: "Claim to air drop...",
-    btn: "View Profile",
-    btn2: "  Claim AirDrop",
-  },
-  {
-    Img: Bitcoin,
-    heading1: "Bitcoin",
-    heading2: "$BTC",
-    Total: "Total Value",
-    TotalValue: "$1,003,235,34",
-    YourToken: "Stake your token...",
-    YourTokenValue: "Claim to air drop...",
-    btn: "View Profile",
-    btn2: "  Claim AirDrop",
-  },
-  {
-    Img: Bitcoin,
-    heading1: "Bitcoin",
-    heading2: "$BTC",
-    Total: "Total Value",
-    TotalValue: "$1,003,235,34",
-    YourToken: "Stake your token...",
-    YourTokenValue: "Claim to air drop...",
+    heading1: "Metal DAO",
+    heading2: "$METAL",
+    Total: "Total Supply",
+    TotalValue: "1,235,34",
+    YourToken: "Price",
+    YourTokenValue: "$0.0012324",
     btn: "View Profile",
     btn2: "  Claim AirDrop",
   },
 ];
 
-const ClaimAirdrop = () => {
+const ClaimAirdrop = ({ value }) => {
   const slider = useRef(null);
   var settings = {
     dots: false,
@@ -107,13 +120,13 @@ const ClaimAirdrop = () => {
       <section className=" relative bgclaimairdrop">
         <img
           onClick={() => slider.current.slickPrev()}
-          className=" absolute top-[20%] left-5"
+          className=" absolute top-[20%] left-5 sm:left-[6%] md:left-[10%] xl:left-3 2xl:left-[9%]   xl:top-[60%]"
           src={rightArrow}
           alt=""
         />
         <img
           onClick={() => slider.current.slickNext()}
-          className=" absolute  top-[20%] right-5"
+          className=" absolute  top-[20%] right-5 sm:left-[18%] xl:top-[60%] xl:left-[95%] 2xl:xl:left-[87%]"
           src={leftArrow}
           alt="#"
         />
@@ -126,8 +139,12 @@ const ClaimAirdrop = () => {
           <Slider ref={slider} {...settings}>
             {sliderData.map((value, index) => {
               return (
-                <div className=" px-2">
-                  <div key={index} className="Stake_Your_Card p-6">
+                <div className=" px-2 pb-10">
+                  <div
+                    key={index}
+                    value={value}
+                    className="Stake_Your_Card p-6"
+                  >
                     <div className=" flex items-center">
                       <img
                         src={value.Img}
@@ -152,27 +169,21 @@ const ClaimAirdrop = () => {
                       </p>
                     </div>
                     <div className=" flex justify-between mt-4">
-                      <a
-                        href="#"
-                        className=" font-Raleway font-medium text-sm text-white underline opacity-80"
-                      >
+                      <p className=" font-Raleway font-medium text-xsm sm:text-sm text-white  opacity-80">
                         {value.YourToken}
-                      </a>
-                      <a
-                        href="#"
-                        className=" font-Raleway font-medium text-sm text-white underline opacity-80"
-                      >
+                      </p>
+                      <p className=" font-Raleway font-medium text-xsm sm:text-sm text-white  opacity-80">
                         {value.YourTokenValue}
-                      </a>
+                      </p>
                     </div>
                     <div className=" flex justify-between ">
                       <div className="">
-                        <button className=" font-Raleway font-medium text-white text-sm border border-white py-3 px-5 mt-8  rounded-[32px]">
+                        <button className=" font-Raleway font-medium text-white text-xsm sm:text-sm border border-white py-2 px-3 sm:py-3 sm:px-5 mt-8  rounded-[32px]">
                           {value.btn}
                         </button>
                       </div>
                       <div className="">
-                        <button className="font-Raleway font-medium text-white text-sm slider_btn py-3 px-5 mt-8 block">
+                        <button className="font-Raleway font-medium text-white text-xsm sm:text-sm slider_btn mt-8 py-2 px-3 sm:py-3 sm:px-5 block">
                           {value.btn2}
                         </button>
                       </div>

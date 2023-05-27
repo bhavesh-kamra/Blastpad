@@ -6,6 +6,8 @@ import "slick-carousel/slick/slick-theme.css";
 import { useRef } from "react";
 import rightArrow from "../assets/images/png/PresArrow.png";
 import leftArrow from "../assets/images/png/nextArrow.png";
+import metaDallor from "../assets/images/png/metalDallor.png";
+import Meata from "../assets/images/png/metal.png";
 export const sliderData = [
   {
     Img: Bitcoin,
@@ -18,7 +20,17 @@ export const sliderData = [
     btn: "View Profile",
   },
   {
-    Img: Bitcoin,
+    Img: metaDallor,
+    heading1: "Bitcoin",
+    heading2: "$BTC",
+    Total: "Total Value",
+    TotalValue: "$1,003,235,34",
+    YourToken: "Stake your token...",
+    YourTokenValue: "Claim to air drop...",
+    btn: "View Profile",
+  },
+  {
+    Img: Meata,
     heading1: "Bitcoin",
     heading2: "$BTC",
     Total: "Total Value",
@@ -38,7 +50,7 @@ export const sliderData = [
     btn: "View Profile",
   },
   {
-    Img: Bitcoin,
+    Img: metaDallor,
     heading1: "Bitcoin",
     heading2: "$BTC",
     Total: "Total Value",
@@ -48,7 +60,7 @@ export const sliderData = [
     btn: "View Profile",
   },
   {
-    Img: Bitcoin,
+    Img: Meata,
     heading1: "Bitcoin",
     heading2: "$BTC",
     Total: "Total Value",
@@ -59,7 +71,7 @@ export const sliderData = [
   },
 ];
 
-const AllRecentTokens = () => {
+const AllRecentTokens = ({ value }) => {
   const slider = useRef(null);
   var settings = {
     dots: false,
@@ -102,27 +114,31 @@ const AllRecentTokens = () => {
       <section className=" relative">
         <img
           onClick={() => slider.current.slickPrev()}
-          className=" absolute top-[20%] left-5"
+          className=" absolute top-[20%] left-5 sm:left-[6%] md:left-[10%] xl:left-3 2xl:left-[9%]   xl:top-[60%]"
           src={rightArrow}
           alt=""
         />
         <img
           onClick={() => slider.current.slickNext()}
-          className=" absolute  top-[20%] right-5"
+          className=" absolute  top-[20%] right-5 sm:left-[18%] xl:top-[60%] xl:left-[95%] 2xl:xl:left-[87%]"
           src={leftArrow}
           alt="#"
         />
         <div className=" container max-w-[1140px] mx-auto px-3">
           <div className=" text-center pt-9 pb-6 mb-10">
             <h2 className=" font-Raleway text-[32px] text-white font-semibold">
-              Claim AirDrop
+              All Recent Tokens
             </h2>
           </div>
           <Slider ref={slider} {...settings}>
             {sliderData.map((value, index) => {
               return (
                 <div className=" px-2">
-                  <div key={index} className="Stake_Your_Card p-6">
+                  <div
+                    key={index}
+                    value={value}
+                    className="Stake_Your_Card p-6"
+                  >
                     <div className=" flex items-center">
                       <img
                         src={value.Img}
