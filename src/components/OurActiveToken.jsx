@@ -403,6 +403,11 @@ const OurActiveToken = () => {
               </div>
             </div>
           </Slider>
+          <div className=" text-center py-7">
+            <button className=" text-white border border-[#31355A]  font-Raleway font-semibold px-10 py-2 rounded-full">
+              Show All Tokens Available to be Staked
+            </button>
+          </div>
         </div>
       </section>
     </>
