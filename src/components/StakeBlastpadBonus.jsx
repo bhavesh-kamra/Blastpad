@@ -13,20 +13,20 @@ const StakeBlastpadBonus = () => {
       />
       <div className="container  mx-auto px-3">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center">
-          <div className=" mx-auto pb-8">
+          <div className=" mx-auto pb-8 pt-8">
             <img className=" w-full" src={blastpadman} alt="proton" />
           </div>
-          <div className=" ps-5 text-center  md:text-start">
-            <h2 className=" text-white font-Raleway text-xxl  font-bold mb-4   leading-[46px]">
+          <div className=" ps-5 text-center  md:text-start pb-5 md:pb-0">
+            <h2 className=" text-white font-Raleway text-[30px]  md:text-[35px] lg:text-[40px]  font-bold mb-4   leading-[46px]">
               BlastPad Bonus Pool
             </h2>
-            <p className=" text-white font-Raleway text-sm  font-normal opacity-75 mb-5">
+            <p className=" text-white font-Raleway text-[13px] sm:text-[14px] lg:text-[16px]  font-normal opacity-75 mb-5">
               Staking has become an increasingly popular way for investors to
               earn rewards on their cryptocurrency holdings. By locking up their
               funds to help validate transactions and maintain network security,
               stakers can earn additional cryptocurrency as a reward.
             </p>
-            <p className="text-white font-Raleway text-sm  font-normal opacity-75">
+            <p className="text-white font-Raleway text-[13px] sm:text-[14px] lg:text-[16px]   font-normal opacity-75">
               These bonus rewards can take many forms, such as higher staking
               rewards, access to exclusive features or services, or airdrops of
               new tokens. For example, some networks may offer higher staking

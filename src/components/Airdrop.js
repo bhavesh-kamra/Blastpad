@@ -11,7 +11,7 @@ const Airdrop = () => {
       <ClaimAirdrop />
       <AirdropToken />
       <ChooseTheAirDrop />
-      <Footer />
+      
     </>
   );
 };

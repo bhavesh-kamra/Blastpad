@@ -28,6 +28,7 @@ const OurActiveToken = () => {
           arrows: false,
         },
       },
+      
       {
         breakpoint: 600,
         settings: {
@@ -91,13 +92,13 @@ const OurActiveToken = () => {
                     </div>
                   </div>
                   <div className=" mt-6 flex justify-between">
-                    <button className=" w-full px-1 sm:px-[3px] py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
+                    <button className=" w-full px-1 sm:px-[3px] py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[10px]  text-white rounded-[22px]">
                       Total raise 69k
                     </button>
-                    <button className=" w-full mx-2 px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
+                    <button className=" w-full mx-2 px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px]  text-white rounded-[22px]">
                       value 3.2M
                     </button>
-                    <button className=" w-full px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
+                    <button className=" w-full px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px]  text-white rounded-[22px]">
                       Min allow$0
                     </button>
                   </div>
@@ -150,7 +151,7 @@ const OurActiveToken = () => {
                     </div>
                   </div>
                   <div className=" mt-6 flex justify-between">
-                    <button className=" w-full px-1 sm:px-[3px] py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
+                    <button className=" w-full px-1 sm:px-[3px] py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[10px] text-white rounded-[22px]">
                       Total raise 69k
                     </button>
                     <button className=" w-full mx-2 px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
@@ -209,7 +210,7 @@ const OurActiveToken = () => {
                     </div>
                   </div>
                   <div className=" mt-6 flex justify-between">
-                    <button className=" w-full px-1 sm:px-[3px] py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
+                    <button className=" w-full px-1 sm:px-[3px] py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[10px] text-white rounded-[22px]">
                       Total raise 69k
                     </button>
                     <button className=" w-full mx-2 px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
@@ -268,7 +269,7 @@ const OurActiveToken = () => {
                     </div>
                   </div>
                   <div className=" mt-6 flex justify-between">
-                    <button className=" w-full px-1 sm:px-[3px] py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
+                    <button className=" w-full px-1 sm:px-[3px] py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[10px] text-white rounded-[22px]">
                       Total raise 69k
                     </button>
                     <button className=" w-full mx-2 px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
@@ -327,7 +328,7 @@ const OurActiveToken = () => {
                     </div>
                   </div>
                   <div className=" mt-6 flex justify-between">
-                    <button className=" w-full px-1 sm:px-[3px] py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
+                    <button className=" w-full px-1 sm:px-[3px] py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[10px] text-white rounded-[22px]">
                       Total raise 69k
                     </button>
                     <button className=" w-full mx-2 px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
@@ -386,7 +387,7 @@ const OurActiveToken = () => {
                     </div>
                   </div>
                   <div className=" mt-6 flex justify-between">
-                    <button className=" w-full px-1 sm:px-[3px] py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
+                    <button className=" w-full px-1 sm:px-[3px] py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[10px] text-white rounded-[22px]">
                       Total raise 69k
                     </button>
                     <button className=" w-full mx-2 px-2 md:px-3 py-2 bg-[#12174C] font-Raleway font-normal text-[10px] sm:text-[11px] text-white rounded-[22px]">
