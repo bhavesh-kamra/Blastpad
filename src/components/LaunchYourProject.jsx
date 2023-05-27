@@ -5,11 +5,13 @@ import LeftSideArrow from "../assets/images/png/leftsiderArrow.png";
 import rightArrow from "../assets/images/png/rightsideArrow.png";
 import Clouds from "../assets/images/png/clouds.png";
 import bg_Launch from "../assets/images/png/bg_launch.png";
+import blueglobe from "../assets/images/png/blueglobe.png";
 
 const LaunchYourProject = () => {
   return (
     <>
       <section className="py-10 lg:mb-20 relative">
+        <img className=" absolute right-0 top-0 hidden lg:block" src={blueglobe} alt="bnlueglobe" />
   
         
 

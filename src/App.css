@@ -27,6 +27,10 @@ body {
   background-image: url(../src/assets/images/png/bgblastpadbonus.png);
   background-size: cover;
 }
+.bgclaimairdrop{
+  background-image: url(../src/assets/images/png/bgclaimairdrop.png);
+  background-size: cover;
+}
 
 .tokenimg{
   height: 70px;
