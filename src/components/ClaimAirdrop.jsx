@@ -104,7 +104,7 @@ const ClaimAirdrop = () => {
   };
   return (
     <>
-      <section className=" relative">
+      <section className=" relative bgclaimairdrop">
         <img
           onClick={() => slider.current.slickPrev()}
           className=" absolute top-[20%] left-5"
