@@ -23,42 +23,31 @@ const MyNav = () => {
                 : "flex gap-5 items-center  show mobileview"
             }
           >
-            <Link to="/">
-              <li>
-                <a className=" text-white  text-xsm" href="">
-                  Home
-                </a>
-              </li>
-            </Link>
-
+            <li>
+              <Link to="/" className=" text-white  text-xsm">
+                Home
+              </Link>
+            </li>
             <li>
               <a className=" text-white  text-xsm" href="">
                 About Us
               </a>
             </li>
-
-            <Link to="/Airdrop">
-              <li>
-                <a className=" text-white text-xsm" href="">
-                  Token AirDrop
-                </a>
-              </li>
-            </Link>
-            <Link to="/Staking">
-              <li>
-                <a className=" text-white text-xsm" href="">
-                  Token Staking
-                </a>
-              </li>
-            </Link>
-            <Link to="/Token">
-              <li className=" lg:me-10">
-                <a className=" text-white text-xsm" href="">
-                  Create a Token
-                </a>
-              </li>
-            </Link>
-
+            <li>
+              <Link to="/airdrop" className=" text-white text-xsm">
+                Token AirDrop
+              </Link>
+            </li>
+            <li>
+              <Link to="/Staking" className=" text-white text-xsm">
+                Token Staking
+              </Link>
+            </li>
+            <li className=" lg:me-10">
+              <Link to="/Token" className=" text-white text-xsm">
+                Create a Token
+              </Link>
+            </li>
             <button className=" text-white text-md  border border-[#3A4973] rounded-full py-2 px-4 bg-[#0D1E49]">
               Get into Touch
             </button>

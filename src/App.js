@@ -11,10 +11,10 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" Component={HomePage} />
-        <Route path="/Staking" Component={Staking} />
-        <Route path="/Token" Component={Token} />
-        <Route path="/Airdrop" Component={Airdrop} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/staking" element={<Staking />} />
+        <Route path="/token" element={<Token />} />
+        <Route path="/airdrop" element={<Airdrop />} />
       </Routes>
     </>
   );
